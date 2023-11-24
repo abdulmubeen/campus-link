@@ -1,10 +1,10 @@
 ## Web Programming and Design - ITC-5103-0NC
 
 ## Team Members
-## Tisha Mogha - N01603851
-## Bhavdeep Singh - N01546218
-## Abdul Mubeen Mohammed - N01611677
-## Munish Patel - N01622248
+### Tisha Mogha - N01603851
+### Bhavdeep Singh - N01546218
+### Abdul Mubeen Mohammed - N01611677
+### Munish Patel - N01622248
 
 ## Tasks
 
