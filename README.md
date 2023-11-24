@@ -1,6 +1,6 @@
 # Web Programming and Design - ITC-5103-0NC
 
-## Project Name - Campus Stories
+## Project Name - Campus Link
 ![alt text](https://github.com/abdulmubeen/campus-stories/blob/main/assets/imgs/logo.png "Campus_Stories_Logo")
 
 ## Description
