@@ -1,19 +1,32 @@
 # Web Programming and Design - ITC-5103-0NC
 
 ## Project Name - Campus Link
+
 ![alt text](https://github.com/abdulmubeen/campus-stories/blob/main/assets/imgs/logo.png "Campus_Stories_Logo")
 
 ## Description
->This project intends to provide a dynamic and engaging Social Media Web Application for college students.
->The platform will offer students a virtual environment to communicate, discuss, and cooperate, increasing their overall educational experience.
+
+> This project intends to provide a dynamic and engaging Social Media Web Application for college students.
+> The platform will offer students a virtual environment to communicate, discuss, and cooperate, increasing their overall educational experience.
 
 ## Team Members
+
 - ### Tisha Mogha - N01603851
 - ### Bhavdeep Singh - N01546218
 - ### Abdul Mubeen Mohammed - N01611677
 - ### Munish Patel - N01622248
 
 ## Tasks
+
+### Tisha Mogha
+
+- [x] Initiated the project
+
+### Bhavdeep Singh
+
+- [x] Initiated the project
+
+### Abdul Mubeen Mohammed
 
 - [x] Initiated the project
 - [x] Initiated the Login Page with a href to the Home Page
@@ -30,6 +43,12 @@
 - [x] Developed Resource Sharing Page
 - [x] Added styling
 - [x] Made the resource-sharing page responsive
+- [x] Added form validation to the Login Page
+- [x] Added GSAP Animation to the SignIn Button
+
+### Munish Patel
+
+- [x] Initiated the project
 
 ## Learning Curve and Challenges
 
