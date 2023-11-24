@@ -1,4 +1,11 @@
-## Web Programming and Design - ITC-5103-0NC
+# Web Programming and Design - ITC-5103-0NC
+
+## Project Name - Campus Stories
+![alt text](https://github.com/abdulmubeen/campus-stories/blob/main/assets/imgs/logo.png "Campus_Stories_Logo")
+
+## Description
+>This project intends to provide a dynamic and engaging Social Media Web Application for college students.
+>The platform will offer students a virtual environment to communicate, discuss, and cooperate, increasing their overall educational experience.
 
 ## Team Members
 ### Tisha Mogha - N01603851
