@@ -1,8 +1,10 @@
-## Assignment Name: Project Task List
+## Web Programming and Design - ITC-5103-0NC
 
-## Name: Abdul Mubeen Mohammed
-
-## Student Number: N01611677
+## Team Members
+## Tisha Mogha - N01603851
+## Bhavdeep Singh - N01546218
+## Abdul Mubeen Mohammed - N01611677
+## Munish Patel - N01622248
 
 ## Tasks
 
@@ -20,7 +22,7 @@
 - [x] Made the Home and Messages page responsive
 - [x] Developed Resource Sharing Page
 - [x] Added styling
-- [x] Made the resource sharing page responsive
+- [x] Made the resource-sharing page responsive
 
 ## Learning Curve and Challenges
 
