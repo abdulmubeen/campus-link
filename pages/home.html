@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../assets/styles/homePage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="header">
+        <header>
+            <div class="logo">
+                <img src="../assets/imgs/logo.png" alt="humber_logo">
+            </div>
+            <div class="search-bar">
+                <form>
+                    <input class="search-bar" type="search" placeholder="Search...">
+                </form>
+            </div>
+            <div class="header-icons">
+                <a>
+                    <i class="fa-regular fa-bell"></i>
+                </a>
+                <a href="./messages.html">
+                    <i class="fa-regular fa-message"></i>
+                </a>
+            </div>
+            <div class="avatar">
+                <a href="./userProfile.html" target="_blank">
+                    <img src="../assets/imgs/avatar.png" class="avatar" alt="avatar">
+                </a>
+            </div>
+        </header>
+    </section>
+
+    <section class="main-content">
+        <section class="left">
+            <nav>
+                <ul>
+                    <li class="nav active">
+                        <a href="./home.html"><i class="fa-solid fa-house"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav">
+                        <a href="#"><i class="fa-regular fa-newspaper"></i>
+                            <span>News Feed</span>
+                        </a>
+                    </li>
+                    <li class="nav">
+                        <a href="#"><i class="fa-solid fa-globe"></i>
+                            <span>Explore</span>
+                        </a>
+                    </li>
+                    <li class="nav">
+                        <a href="#"><i class="fa-solid fa-briefcase"></i>
+                            <span>Job Board</span>
+                        </a>
+                    </li>
+                    <li class="nav">
+                        <a href="#"><i class="fa-solid fa-user-group"></i>
+                            <span>Groups</span>
+                        </a>
+                    </li>
+                    <li class="nav">
+                        <a href="./resourceSharing.html"><i class="fa-solid fa-share-nodes"></i>
+                            <span>Resource Sharing</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="middle">
+            <div class="add-post">
+                <div class="avatar">
+                    <img src="../assets/imgs/avatar.png" class="avatar" alt="avatar">
+                </div>
+                <div class="post-desc">
+                    <form>
+                        <input class="post-desc" type="text" placeholder="What's on your mind?...">
+                    </form>
+                </div>
+                <div class="post-icons">
+                    <i class="fa-solid fa-link"></i>
+                    <i class="fa-solid fa-camera"></i>
+                    <i class="fa-solid fa-image"></i>
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="post-btn">
+                    <button class="post-btn">Post</button>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-user">
+                    <div class="user-details">
+                        <div class="avatar">
+                            <img src="../assets/imgs/post1-user.png" class="avatar" alt="avatar">
+                        </div>
+                        <div class="name-time">
+                            <h4>John Doe</h4>
+                            <p>10 October at 10.43 AM</p>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <div class="content-desc">
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste doloribus sint quo
+                            dolorem
+                            rem eos aspernatur consequatur distinctio quisquam officiis voluptas, ad rerum numquam
+                            esse
+                            minus alias eum minima, incidunt non consequuntur architecto! Quod ipsa minus inventore
+                            doloribus voluptatum facere quo molestiae.
+                        </p>
+                    </div>
+                    <div class="content-tags">
+                        <p>
+                            #humber #first-year #humberFAST
+                        </p>
+                    </div>
+                    <div class="content-pic">
+                        <img src="../assets/imgs/post1.jpg" alt="post1_image">
+                    </div>
+                    <div class="post-controls">
+                        <button class="likes reacted">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <span>12k Likes</span>
+                        </button>
+                        <button class="comments">
+                            <i class="fa-solid fa-comment"></i>
+                            <span>5k Comments</span>
+                        </button>
+                        <button class="saved">
+                            <i class="fa-solid fa-bookmark"></i>
+                            <span>2k Saved</span>
+                        </button>
+                        <button class="shares">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>7k Shares</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post-comment">
+                <div class="user-avatar">
+                    <img src="../assets/imgs/avatar.png" class="avatar" alt="avatar">
+                </div>
+                <div class="comment-input">
+                    <form>
+                        <input class="comment-input" type="text" placeholder="Write a comment...">
+                    </form>
+                </div>
+                <div class="comment-icons">
+                    <i class="fa-solid fa-link"></i>
+                    <i class="fa-solid fa-camera"></i>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-user">
+                    <div class="user-details">
+                        <div class="avatar">
+                            <img src="../assets/imgs/post2-user.png" class="avatar" alt="avatar">
+                        </div>
+                        <div class="name-time">
+                            <h4>John Doe</h4>
+                            <p>10 October at 10.43 AM</p>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <div class="content-desc">
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste doloribus sint quo dolorem
+                            rem eos aspernatur consequatur distinctio quisquam officiis voluptas, ad rerum numquam esse
+                            minus alias eum minima, incidunt non consequuntur architecto! Quod ipsa minus inventore
+                            doloribus voluptatum facere quo molestiae.
+                        </p>
+                    </div>
+                    <div class="content-tags">
+                        <p>
+                            #humber #first-year #humberFAST
+                        </p>
+                    </div>
+                    <div class="content-pic">
+                        <img src="../assets/imgs/post1.jpg" alt="post1_image">
+                    </div>
+                    <div class="post-controls">
+                        <button class="likes reacted">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <span>12k Likes</span>
+                        </button>
+                        <button class="comments">
+                            <i class="fa-solid fa-comment"></i>
+                            <span>5k Comments</span>
+                        </button>
+                        <button class="saved">
+                            <i class="fa-solid fa-bookmark"></i>
+                            <span>2k Saved</span>
+                        </button>
+                        <button class="shares">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>7k Shares</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post-comment">
+                <div class="user-avatar">
+                    <img src="../assets/imgs/avatar.png" class="avatar" alt="avatar">
+                </div>
+                <div class="comment-input">
+                    <form>
+                        <input class="comment-input" type="text" placeholder="Write a comment...">
+                    </form>
+                </div>
+                <div class="comment-icons">
+                    <i class="fa-solid fa-link"></i>
+                    <i class="fa-solid fa-camera"></i>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-user">
+                    <div class="user-details">
+                        <div class="avatar">
+                            <img src="../assets/imgs/post3-user.png" class="avatar" alt="avatar">
+                        </div>
+                        <div class="name-time">
+                            <h4>John Doe</h4>
+                            <p>10 October at 10.43 AM</p>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <div class="content-desc">
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste doloribus sint quo dolorem
+                            rem eos aspernatur consequatur distinctio quisquam officiis voluptas, ad rerum numquam esse
+                            minus alias eum minima, incidunt non consequuntur architecto! Quod ipsa minus inventore
+                            doloribus voluptatum facere quo molestiae.
+                        </p>
+                    </div>
+                    <div class="content-tags">
+                        <p>
+                            #humber #first-year #humberFAST
+                        </p>
+                    </div>
+                    <div class="content-pic">
+                        <img src="../assets/imgs/post1.jpg" alt="post1_image">
+                    </div>
+                    <div class="post-controls">
+                        <button class="likes reacted">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <span>12k Likes</span>
+                        </button>
+                        <button class="comments">
+                            <i class="fa-solid fa-comment"></i>
+                            <span>5k Comments</span>
+                        </button>
+                        <button class="saved">
+                            <i class="fa-solid fa-bookmark"></i>
+                            <span>2k Saved</span>
+                        </button>
+                        <button class="shares">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>7k Shares</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post-comment">
+                <div class="user-avatar">
+                    <img src="../assets/imgs/avatar.png" class="avatar" alt="avatar">
+                </div>
+                <div class="comment-input">
+                    <form>
+                        <input class="comment-input" type="text" placeholder="Write a comment...">
+                    </form>
+                </div>
+                <div class="comment-icons">
+                    <i class="fa-solid fa-link"></i>
+                    <i class="fa-solid fa-camera"></i>
+                </div>
+            </div>
+        </section>
+
+        <section class="right">
+            <div class="suggestions">
+                <h3 class="title">Suggestions for you</h3>
+                <div class="users">
+                    <div class="user-details">
+                        <div class="user-avatar">
+                            <img src="../assets/imgs/post1-user.png" class="avatar" alt="avatar">
+                        </div>
+                        <div class="user-name">
+                            <h4>Ankita Korape</h4>
+                            <p>4k+ Connections</p>
+                        </div>
+                        <div class="follow-btn">
+                            <i class="fa-solid fa-user-plus"></i>
+                        </div>
+                    </div>
+                    <div class="user-details">
+                        <div class="user-avatar">
+                            <img src="../assets/imgs/post1-user.png" class="avatar" alt="avatar">
+                        </div>
+                        <div class="user-name">
+                            <h4>Ankita Korape</h4>
+                            <p>4k+ Connections</p>
+                        </div>
+                        <div class="follow-btn">
+                            <i class="fa-solid fa-user-plus"></i>
+                        </div>
+                    </div>
+                    <div class="user-details">
+                        <div class="user-avatar">
+                            <img src="../assets/imgs/post1-user.png" class="avatar" alt="avatar">
+                        </div>
+                        <div class="user-name">
+                            <h4>Ankita Korape</h4>
+                            <p>4k+ Connections</p>
+                        </div>
+                        <div class="follow-btn">
+                            <i class="fa-solid fa-user-plus"></i>
+                        </div>
+                    </div>
+                    <div class="user-details">
+                        <div class="user-avatar">
+                            <img src="../assets/imgs/post1-user.png" class="avatar" alt="avatar">
+                        </div>
+                        <div class="user-name">
+                            <h4>Ankita Korape</h4>
+                            <p>4k+ Connections</p>
+                        </div>
+                        <div class="follow-btn">
+                            <i class="fa-solid fa-user-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="my-friends">
+                <h3 class="title">My Friends</h3>
+                <div class="friends">
+                    <div class="friend-details">
+                        <div class="friend-avatar">
+                            <img src="../assets/imgs/post1-user.png" class="avatar" alt="avatar">
+                        </div>
+                        <div class="friend-name">
+                            <h4>Ankita Korape</h4>
+                            <p>Last active 5h ago</p>
+                        </div>
+                        <div class="message-btn">
+                            <i class="fa-solid fa-message"></i>
+                        </div>
+                    </div>
+                    <div class="friend-details">
+                        <div class="friend-avatar">
+                            <img src="../assets/imgs/post1-user.png" class="avatar" alt="avatar">
+                        </div>
+                        <div class="friend-name">
+                            <h4>Ankita Korape</h4>
+                            <p style="color: green; font-weight: 500;">Active now</p>
+                        </div>
+                        <div class="message-btn">
+                            <i class="fa-solid fa-message"></i>
+                        </div>
+                    </div>
+                    <div class="friend-details">
+                        <div class="friend-avatar">
+                            <img src="../assets/imgs/post1-user.png" class="avatar" alt="avatar">
+                        </div>
+                        <div class="friend-name">
+                            <h4>Ankita Korape</h4>
+                            <p>Last active 2h ago</p>
+                        </div>
+                        <div class="message-btn">
+                            <i class="fa-solid fa-message"></i>
+                        </div>
+                    </div>
+                    <div class="friend-details">
+                        <div class="friend-avatar">
+                            <img src="../assets/imgs/post1-user.png" class="avatar" alt="avatar">
+                        </div>
+                        <div class="friend-name">
+                            <h4>Ankita Korape</h4>
+                            <p>Last active 1h ago</p>
+                        </div>
+                        <div class="message-btn">
+                            <i class="fa-solid fa-message"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- gsock cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="../assets/js/homePage.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,471 @@
+@import url("./default.css");
+
+.wrapper {
+  margin: 2rem;
+  display: flex;
+  background-color: var(--background-color);
+  border-radius: 1.5rem;
+}
+
+.wrapper > .users {
+  width: 30%;
+  background-color: #e8e8e8;
+  border-bottom-left-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
+}
+
+.wrapper > .users > .header {
+  padding: 2rem 2rem 1rem 2rem;
+}
+
+.wrapper > .users > .header > .heading {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper > .users > .header > .search > form > input {
+  padding: 0.5rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  border-radius: 2rem;
+  padding-left: 3rem;
+  border: solid black 1px;
+  background: transparent
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
+    no-repeat 13px center;
+}
+.wrapper > .users > .user-msgs > .user {
+  display: flex;
+  padding: 1rem;
+}
+
+.wrapper > .users > .user-msgs > .user > .user-img > img {
+  width: 2.75rem;
+}
+
+.wrapper > .users > .user-msgs > .user > .user-details {
+  margin-left: 1rem;
+}
+
+.wrapper > .users > .user-msgs > .selected {
+  background-color: white;
+}
+
+.wrapper > .users > .user-msgs > hr {
+  margin: 0 1.5rem;
+}
+
+.wrapper > .messages {
+  width: 70%;
+}
+
+.wrapper > .messages > .message-header {
+  display: flex;
+  width: 100%;
+  padding: 2rem 2rem 0.75rem 2rem;
+  justify-content: space-between;
+}
+
+.wrapper > .messages > .message-header > .user-details {
+  display: flex;
+}
+
+.wrapper > .messages > .message-header > .user-details > .avatar > img {
+  width: 3.5rem;
+}
+
+.wrapper > .messages > .message-header > .user-details > .name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.wrapper > .messages > .message-header > .header-icons {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper > .messages > .message-header > .header-icons > i {
+  margin-left: 2rem;
+}
+
+.wrapper > .messages > .message-header > .header-icons > i.round {
+  background-color: #f3f3f3;
+  border-radius: 2rem;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper > .messages > hr {
+  margin: 2rem;
+}
+
+.wrapper > .messages > .message-body {
+  padding: 0 2rem 2rem 2rem;
+}
+
+.wrapper > .messages > .message-body > .message {
+  display: flex;
+  padding: 1.25rem;
+}
+
+.wrapper > .messages > .message-body > .message > .message-user > img,
+.wrapper > .messages > .message-body > .message > .message-user-pr > img {
+  width: 2.75rem;
+}
+
+.wrapper > .messages > .message-body > .message > .message-body {
+  margin-left: 1rem;
+  background-color: #f3f3f3;
+  border-radius: 1rem;
+  padding: 1.2rem;
+}
+
+.wrapper > .messages > .message-body > .message > .message-body-pr {
+  margin-right: 1rem;
+  background-color: #f3f3f3;
+  border-radius: 1rem;
+  padding: 1.2rem;
+}
+
+.wrapper > .messages > .send-message {
+  background-color: #d0d0d0;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom-right-radius: 1.5rem;
+}
+
+.wrapper > .messages > .send-message > .input {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper > .messages > .send-message > .input > input {
+  padding: 0.5rem;
+  width: 100%;
+  border: none;
+  border-radius: 1rem;
+  background-color: #d0d0d0;
+  font-size: 0.9rem;
+}
+
+.wrapper > .messages > .send-message > .input > input:focus {
+  outline: none;
+}
+
+.wrapper > .messages > .send-message > .input-icons {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper > .messages > .send-message > .input-icons > i {
+  margin-left: 2rem;
+}
+
+.wrapper > .messages > .send-message > .input-icons > i.send {
+  background-color: #f3f3f3;
+  border-radius: 2rem;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+body > .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 25px;
+  background: #0f9bffed; /*header color */
+}
+
+body > .header > ul {
+  list-style: none;
+  display: flex;
+}
+
+body > .header > span {
+  color: #fff;
+}
+
+body > .header > ul > li {
+  margin: 0 12px;
+}
+
+body > .header > ul > li > a {
+  color: #fff;
+}
+
+body > .header > ul > li > a:hover {
+  color: #222;
+}
+
+body > nav {
+  background-color: #222;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+}
+
+body > nav > .toggle-button > a,
+body > nav > ul > li > a {
+  color: #fff;
+}
+
+body > nav > .toggle-button > a:hover,
+body > nav > ul > li > a:hover {
+  color: #0f9bffed;
+}
+
+body > nav > .logo {
+  flex: 1;
+}
+
+body > nav > .logo > a {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+
+body > nav > .logo > h3 {
+  color: #fff;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+body > nav > .menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+body > nav > .menu > li {
+  padding: 15px 10px;
+  font-size: 20px;
+}
+
+body > nav > .toggle-button {
+  font-size: 30px;
+  display: none;
+} /*      Not Working right now because we need javascript for that */
+
+/* Footer Section */
+.footer {
+  background: #222;
+  padding: 30px 0px;
+  font-family: "Play", sans-serif;
+  text-align: center;
+}
+
+.footer .row {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: #ffffff;
+  font-size: 0.8em;
+}
+
+.footer .row a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+.footer .row a:hover {
+  color: #0f9bffed;
+}
+
+.footer .row ul {
+  width: 100%;
+}
+
+.footer .row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .row a i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 60px) {
+  nav {
+    display: block;
+    position: relative;
+    padding: 15px 20px;
+  }
+  .menu {
+    margin-top: 15px;
+    display: none;
+  }
+}
+@media (max-width: 720px) {
+  .footer {
+    text-align: left;
+    padding: 5%;
+  }
+  .footer .row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+  }
+  .footer .row a i {
+    margin: 0% 3%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper {
+    width: 85%;
+    margin: 1rem;
+  }
+
+  .wrapper > .users {
+    width: 20%;
+  }
+
+  .wrapper > .users > .header {
+    display: none;
+  }
+
+  .wrapper > .users > .user-msgs > .user > .user-img > img {
+    width: 2rem;
+  }
+
+  .wrapper > .users > .user-msgs > .user > .user-details {
+    display: none;
+  }
+
+  .wrapper > .users > .user-msgs > .selected {
+    background-color: white;
+    border-top-left-radius: 1.5rem;
+  }
+
+  .wrapper > .messages {
+    width: 100%;
+  }
+
+  .wrapper > .messages > .message-header {
+    padding: 2rem 2rem 0.5rem 2rem;
+  }
+
+  .wrapper > .messages > .message-header > .user-details > .avatar > img {
+    width: 2rem;
+  }
+
+  .wrapper > .messages > .message-header > .user-details > .name {
+    margin-left: 0.75rem;
+  }
+
+  .wrapper > .messages > .message-header > .user-details > .name > h4 {
+    font-size: 0.8rem;
+  }
+
+  .wrapper > .messages > .message-header > .user-details > .name > p {
+    font-size: 0.65rem;
+  }
+
+  .wrapper > .messages > .message-header > .header-icons > i {
+    margin-left: 1rem;
+    font-size: 0.65rem;
+  }
+
+  .wrapper > .messages > .message-header > .header-icons > i.mobile {
+    display: none;
+  }
+
+  .wrapper > .messages > hr {
+    margin: 1rem;
+  }
+
+  .wrapper > .messages > .message-body {
+    padding: 0 1rem 1rem 1rem;
+  }
+
+  .wrapper > .messages > .message-body > .message {
+    padding: 0.75rem;
+  }
+
+  .wrapper > .messages > .message-body > .message > .message-user > img,
+  .wrapper > .messages > .message-body > .message > .message-user-pr > img {
+    width: 2rem;
+  }
+
+  .wrapper > .messages > .message-body > .message > .message-body {
+    margin-left: 0.75rem;
+    background-color: #f3f3f3;
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+
+  .wrapper > .messages > .message-body > .message > .message-body-pr {
+    margin-right: 0.75rem;
+    padding: 1rem;
+  }
+
+  .wrapper > .messages > .message-body > .message > .message-body > p,
+  .wrapper > .messages > .message-body > .message > .message-body-pr > p {
+    font-size: 0.75rem;
+  }
+
+  .wrapper > .messages > .send-message {
+    background-color: #d0d0d0;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom-right-radius: 1.5rem;
+  }
+
+  .wrapper > .messages > .send-message > .input {
+    width: 70%;
+    display: flex;
+    align-items: center;
+  }
+
+  .wrapper > .messages > .send-message > .input > input {
+    padding: 0.5rem;
+    width: 100%;
+    border: none;
+    border-radius: 1rem;
+    background-color: #d0d0d0;
+    font-size: 0.9rem;
+  }
+
+  .wrapper > .messages > .send-message > .input > input:focus {
+    outline: none;
+  }
+
+  .wrapper > .messages > .send-message > .input-icons {
+    display: flex;
+    align-items: center;
+  }
+
+  .wrapper > .messages > .send-message > .input-icons > i {
+    margin-left: 2rem;
+  }
+
+  .wrapper > .messages > .send-message > .input-icons > i.send {
+    background-color: #f3f3f3;
+    border-radius: 2rem;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

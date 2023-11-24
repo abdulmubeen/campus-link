@@ -1,0 +1,217 @@
+@import url("./default.css");
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: 80%;
+  height: 75vh;
+  margin: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  border-radius: 1rem;
+  background-color: var(--background-color);
+}
+
+.wrapper > .left {
+  width: 45%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.wrapper > .left > .logo {
+  width: 50%;
+  height: 30%;
+}
+
+.wrapper > .left > .logo > img {
+  width: 80%;
+}
+
+.wrapper > .left > .login-content {
+  height: 80%;
+  display: flex;
+  padding: 1.25rem;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.wrapper > .left > .login-content > .heading > p {
+  margin-top: 0.5rem;
+}
+
+.wrapper > .left > .login-content > .login-form > form {
+  margin-top: 2rem;
+}
+
+.wrapper > .left > .login-content > .login-form > form > .form-input {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper > .left > .login-content > .login-form > form > .form-input > label,
+.wrapper > .left > .login-content > .login-form > form > .form-check > label {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.wrapper > .left > .login-content > .login-form > form > .form-input > input,
+.wrapper
+  > .left
+  > .login-content
+  > .login-form
+  > form
+  > .form-input
+  > .pwd-input
+  > input {
+  padding: 0.5rem 0rem;
+  border: none;
+  border-bottom: solid rgb(189, 189, 189) 1px;
+  color: rgb(150, 150, 150);
+}
+
+.wrapper
+  > .left
+  > .login-content
+  > .login-form
+  > form
+  > .form-input
+  > .pwd-input {
+  display: flex;
+}
+
+.wrapper
+  > .left
+  > .login-content
+  > .login-form
+  > form
+  > .form-input
+  > .pwd-input
+  > input {
+  width: 90%;
+}
+
+.wrapper
+  > .left
+  > .login-content
+  > .login-form
+  > form
+  > .form-input
+  > .pwd-input
+  > i {
+  width: 10%;
+  cursor: pointer;
+  text-align: center;
+  font-size: 0.75rem;
+  padding: 0.7rem 0rem;
+  border: none;
+  border-bottom: solid rgb(189, 189, 189) 1px;
+}
+
+.wrapper
+  > .left
+  > .login-content
+  > .login-form
+  > form
+  > .form-input
+  > input:focus,
+.wrapper
+  > .left
+  > .login-content
+  > .login-form
+  > form
+  > .form-input
+  > .pwd-input
+  > input:focus {
+  outline: none;
+}
+
+.wrapper > .left > .login-content > .login-form > form > .form-check {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper > .left > .login-content > .login-form > form > .form-check > label {
+  margin: 1rem;
+}
+
+.wrapper
+  > .left
+  > .login-content
+  > .login-form
+  > form
+  > .form-check
+  > input:hover {
+  cursor: pointer;
+}
+
+.wrapper > .left > .login-content > .login-form > form > button {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  font-weight: 700;
+  background-color: var(--button-color);
+  border: solid 1px #d4b81a;
+  color: var(--paragraph-color);
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper > .left > .login-content > .login-form > form > button > i {
+  margin-left: 0.5rem;
+  display: flex;
+  align-self: center;
+}
+
+.wrapper > .left > .login-content > .login-form > form > button:hover {
+  cursor: pointer;
+}
+
+.wrapper > .right {
+  width: 55%;
+  display: flex;
+}
+
+.wrapper > .right > img {
+  width: 100%;
+  border-radius: 2.5rem 1rem 1rem 2.5rem;
+}
+
+/* media query to accomodate styling to screen width lower than 600px */
+@media screen and (max-width: 725px) {
+  .wrapper > .left {
+    width: 100%;
+  }
+
+  .wrapper > .left > .login-content {
+    padding: 0.25rem;
+  }
+
+  .wrapper > .left > .logo {
+    width: 40%;
+  }
+
+  .wrapper > .left > .logo > img {
+    width: 100%;
+  }
+
+  .wrapper > .right {
+    width: 0;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .wrapper > .left > .logo {
+    width: 70%;
+  }
+}

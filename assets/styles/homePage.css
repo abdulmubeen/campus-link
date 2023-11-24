@@ -1,0 +1,531 @@
+@import url("./default.css");
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3rem 4rem;
+}
+
+header > .logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.logo > img {
+  width: 9.75rem;
+}
+
+header > .search-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 60%;
+}
+
+header > .search-bar > form {
+  padding: 0;
+  border: none;
+  width: 100%;
+  margin-left: 3.75rem;
+}
+
+input.search-bar {
+  border: 1px solid #555;
+  border-radius: 5rem;
+  display: block;
+  width: 100%;
+  padding: 0.75rem 3rem;
+  background: transparent
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
+    no-repeat 13px center;
+}
+
+header > .header-icons {
+  width: 7%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 2rem;
+  justify-content: space-between;
+  align-content: center;
+}
+
+header > .header-icons > a > i {
+  color: #555;
+  font-size: 1.35rem;
+}
+header > .header-icons > a:hover,
+header > .header-icons > a > i:hover {
+  cursor: pointer;
+  color: black;
+}
+
+header > .avatar > a > img {
+  width: 3rem;
+  margin-left: 2rem;
+}
+
+.main-content {
+  display: flex;
+}
+
+.left {
+  margin-left: 5rem;
+  width: 17%;
+}
+
+.left > nav {
+  width: 100%;
+}
+
+.left > nav > ul {
+  list-style-position: inside;
+  list-style: none;
+}
+
+.left > nav > ul > li {
+  margin: 1rem;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.active,
+.left > nav > ul > li:hover {
+  background-color: #686868;
+  cursor: pointer;
+}
+.left > nav > ul > .active > a,
+.left > nav > ul > li:hover > a {
+  color: white;
+}
+
+.left > nav > ul > li > a {
+  text-decoration: none;
+  display: flex;
+  color: #555;
+}
+
+.left > nav > ul > li > a > i {
+  padding-right: 1rem;
+  padding-top: 0.15rem;
+}
+
+.middle {
+  width: 50%;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.middle > .add-post {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1.3rem;
+}
+
+.middle > .add-post > .avatar > img {
+  width: 3rem;
+}
+
+.middle > .add-post > .post-desc {
+  width: 58.5%;
+  margin-left: 1rem;
+}
+.middle > .add-post > .post-desc > form > input {
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #ebebeb;
+  font-weight: lighter;
+  border: none;
+  width: 100%;
+}
+.middle > .add-post > .post-icons {
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+}
+.middle > .add-post > .post-icons > i {
+  font-size: 1.25rem;
+}
+
+.middle > .add-post > .post-btn {
+  width: 10%;
+  margin-left: 0.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.middle > .add-post > .post-btn > button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 1.25rem;
+  border: none;
+  color: white;
+  font-weight: 500;
+  background-color: #1a2bcc;
+}
+
+.middle > .post {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-top: 1.5rem;
+}
+
+.middle > .post > .post-user {
+  display: flex;
+  justify-content: space-between;
+}
+
+.middle > .post > .post-user > .user-details {
+  display: flex;
+}
+
+.middle > .post > .post-user > .user-details > .avatar > img {
+  width: 3rem;
+  margin-right: 1rem;
+}
+.middle > .post > .post-user > .user-details > .name-time {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.middle > .post > .post-user > .user-details > .name-time > p {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: #686868;
+}
+
+.middle > .post > .post-content > .content-desc > p {
+  font-weight: 300;
+  padding: 1rem 0;
+}
+
+.middle > .post > .post-content > .content-tags > p {
+  font-weight: 500;
+  color: #1a2bcc;
+  padding-bottom: 2rem;
+}
+
+.middle > .post > .post-content > .content-pic > img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.middle > .post > .post-content > .post-controls {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.middle > .post > .post-content > .post-controls > button {
+  padding: 0.85rem;
+  border-radius: 1.75rem;
+  border: none;
+  font-weight: 500;
+}
+
+.middle > .post > .post-content > .post-controls > button > i {
+  padding-right: 0.75rem;
+}
+
+.reacted,
+.middle > .post > .post-content > .post-controls > button:hover {
+  background-color: #ced3f4;
+  color: #192acc;
+}
+
+.middle > .post-comment {
+  display: flex;
+  width: 95%;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.middle > .post-comment > .user-avatar > img {
+  width: 3rem;
+  margin-right: 1.2rem;
+}
+.middle > .post-comment > .comment-input {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 75%;
+}
+
+.middle > .post-comment > .comment-input > form {
+  width: 100%;
+}
+
+.middle > .post-comment > .comment-input > form > input {
+  width: 100%;
+  padding: 1.2rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border: none;
+}
+
+.middle > .post-comment > .comment-icons {
+  display: flex;
+  align-items: center;
+  width: 15%;
+  background-color: white;
+  justify-content: space-evenly;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.right {
+  width: 20%;
+  margin-left: 2rem;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  height: fit-content;
+}
+
+.right > .suggestions,
+.right > .my-friends {
+  display: flex;
+  flex-direction: column;
+}
+
+.right > .suggestions > .users,
+.right > .my-friends > .friends {
+  margin-top: 2rem;
+}
+
+.right > .suggestions > .users > .user-details,
+.right > .my-friends > .friends > .friend-details {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.right > .suggestions > .users > .user-details > .user-name,
+.right > .my-friends > .friends > .friend-details > .friend-name {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.right > .suggestions > .users > .user-details > .user-name > p,
+.right > .my-friends > .friends > .friend-details > .friend-name > p {
+  font-size: 0.8rem;
+  font-weight: lighter;
+  color: #686868;
+}
+
+.right > .suggestions > .users > .user-details > .user-avatar > img,
+.right > .my-friends > .friends > .friend-details > .friend-avatar > img {
+  width: 3rem;
+  margin-right: 0.5rem;
+}
+
+.right > .suggestions > .users > .user-details > .follow-btn,
+.right > .my-friends > .friends > .friend-details > .message-btn {
+  display: flex;
+  align-items: center;
+}
+
+.right > .suggestions > .users > .user-details > .follow-btn > i,
+.right > .my-friends > .friends > .friend-details > .message-btn > i {
+  font-size: 1.15rem;
+  margin-left: 1rem;
+}
+
+.right > hr {
+  margin: 1.25rem 0;
+}
+
+@media screen and (max-width: 950px) {
+  .main-content {
+    flex-direction: column;
+  }
+  .header > header {
+    margin-bottom: 1rem;
+  }
+  .left {
+    width: 100%;
+    margin-left: 0;
+  }
+  .left > nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .middle {
+    width: 100%;
+    margin-left: 0;
+    padding: 3rem;
+  }
+  .right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  header {
+    margin: 2rem 2rem;
+  }
+  .logo > img {
+    width: 5rem;
+  }
+  header > .search-bar {
+    width: 40%;
+  }
+  header > .search-bar > form {
+    margin-left: 1.2rem;
+  }
+  input.search-bar {
+    padding: 0.5rem 1rem 0.5rem 2.35rem;
+    font-size: 0.75rem;
+  }
+
+  header > .header-icons {
+    margin-left: 0.75rem;
+    width: 14%;
+  }
+  header > .header-icons > a > i {
+    color: #555;
+    font-size: 0.8rem;
+    padding-left: 0.2rem;
+  }
+  header > .avatar > a > img {
+    width: 2rem;
+    margin-left: 0.8rem;
+  }
+  .left > nav {
+    padding: 0 1rem;
+  }
+  .left > nav > ul > li {
+    margin: 0.5rem;
+    padding: 1rem;
+  }
+  .left > nav > ul > li > a > span {
+    display: none;
+  }
+  .left > nav > ul > li > a > i {
+    padding: 0;
+  }
+  .middle {
+    margin-left: 0;
+    padding: 1.75rem;
+  }
+
+  .middle > .add-post > .avatar {
+    display: flex;
+    align-items: center;
+  }
+
+  .middle > .add-post > .avatar > img {
+    width: 2rem;
+  }
+
+  .middle > .add-post > .post-desc {
+    width: 55%;
+    margin-left: 0.75rem;
+  }
+  .middle > .add-post > .post-desc > form > input {
+    padding: 0.75rem;
+    font-size: 0.7rem;
+  }
+  .middle > .add-post > .post-icons {
+    display: none;
+  }
+
+  .middle > .add-post > .post-btn {
+    margin-left: 0.95rem;
+  }
+
+  .middle > .add-post > .post-btn > button {
+    padding: 0.7rem 1.25rem;
+  }
+
+  .middle > .post {
+    padding: 1.5rem;
+  }
+
+  .middle > .post > .post-user > .user-details > .avatar > img {
+    width: 2rem;
+    margin-right: 1rem;
+  }
+
+  .middle > .post > .post-user > .user-details > .name-time > h4 {
+    font-size: 0.9rem;
+  }
+
+  .middle > .post > .post-user > .user-details > .name-time > p {
+    font-size: 0.65rem;
+  }
+
+  .middle > .post > .post-content > .content-desc > p {
+    font-size: 0.75rem;
+  }
+
+  .middle > .post > .post-content > .content-tags > p {
+    font-size: 0.75rem;
+  }
+
+  .middle > .post > .post-content > .post-controls > button {
+    padding: 0.7rem 1.25rem;
+  }
+
+  .middle > .post > .post-content > .post-controls > button > i {
+    font-size: 0.75rem;
+    padding-right: 0;
+  }
+  .middle > .post > .post-content > .post-controls > button > span {
+    display: none;
+  }
+
+  .middle > .post-comment {
+    display: flex;
+    margin-top: 1rem;
+  }
+
+  .middle > .post-comment > .user-avatar {
+    display: flex;
+    align-items: center;
+  }
+
+  .middle > .post-comment > .user-avatar > img {
+    width: 2rem;
+    margin-right: 1rem;
+    margin-left: 0.8rem;
+  }
+  .middle > .post-comment > .comment-input {
+    width: 60%;
+  }
+
+  .middle > .post-comment > .comment-input > form > input {
+    font-size: 0.75rem;
+  }
+
+  .middle > .post-comment > .comment-icons {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    background-color: white;
+    justify-content: space-evenly;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+
+  .middle > .post-comment > .comment-icons > i {
+    font-size: 0.7rem;
+    padding-right: 0.5rem;
+  }
+}
