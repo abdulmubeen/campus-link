@@ -45,6 +45,7 @@
 - [x] Made the resource-sharing page responsive
 - [x] Added form validation to the Login Page
 - [x] Added GSAP Animation to the SignIn Button
+- [x] Added comment functionality for the post
 
 ### Munish Patel
 

@@ -250,7 +250,6 @@ header > .avatar > a > img {
 
 .middle > .post-comment {
   display: flex;
-  width: 95%;
   justify-content: center;
   margin-top: 1rem;
 }
@@ -263,7 +262,7 @@ header > .avatar > a > img {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  width: 75%;
+  width: 60%;
 }
 
 .middle > .post-comment > .comment-input > form {
@@ -281,11 +280,59 @@ header > .avatar > a > img {
 .middle > .post-comment > .comment-icons {
   display: flex;
   align-items: center;
-  width: 15%;
+  width: 25%;
   background-color: white;
   justify-content: space-evenly;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
+}
+
+.middle > .post > .post-content > .post-comment {
+  border-top: solid #f3f3f3;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  display: flex;
+}
+
+.middle > .post > .post-content > .post-comment > .user-details {
+  display: flex;
+  border-right: solid #f3f3f3;
+  padding-right: 1.25rem;
+}
+
+.middle
+  > .post
+  > .post-content
+  > .post-comment
+  > .user-details
+  > .avatar
+  > img {
+  width: 3rem;
+  margin-right: 1rem;
+}
+
+.middle > .post > .post-content > .post-comment > .user-details > .name-time {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.middle
+  > .post
+  > .post-content
+  > .post-comment
+  > .user-details
+  > .name-time
+  > p {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: #686868;
+}
+
+.middle > .post > .post-content > .post-comment > .comment-content {
+  align-self: center;
+  margin-left: 1rem;
 }
 
 .right {
@@ -514,14 +561,43 @@ header > .avatar > a > img {
     font-size: 0.75rem;
   }
 
+  .middle
+    > .post
+    > .post-content
+    > .post-comment
+    > .user-details
+    > .avatar
+    > img {
+    width: 2rem;
+    margin-right: 1rem;
+  }
+
+  .middle
+    > .post
+    > .post-content
+    > .post-comment
+    > .user-details
+    > .name-time
+    > h4 {
+    font-size: 0.9rem;
+  }
+
+  .middle
+    > .post
+    > .post-content
+    > .post-comment
+    > .user-details
+    > .name-time
+    > p {
+    font-size: 0.65rem;
+  }
+
+  .middle > .post > .post-content > .post-comment > .comment-content {
+    font-size: 0.8rem;
+  }
+
   .middle > .post-comment > .comment-icons {
-    display: flex;
-    align-items: center;
-    width: 20%;
-    background-color: white;
-    justify-content: space-evenly;
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    width: 30%;
   }
 
   .middle > .post-comment > .comment-icons > i {
