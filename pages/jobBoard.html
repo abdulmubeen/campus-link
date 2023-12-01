@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/styles/jobBoard.css">
+    <title>Job Board</title>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <span><i class="fa fa-phone" aria-hidden="true"> 111 222 3333</i></span>
+        <ul>
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+    <!-- header section ends here -->
+
+
+    <!-- Nav bar section -->
+    <nav>
+        <div class="logo">
+            <img src="../assets/imgs/logo.png"> 
+            <h3></h3>
+        </div>
+        <div class="toggle-button">
+            <a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        </div>
+        <ul class="menu" id="myMenu">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="#">About </a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">My Profile</a></li>
+            <li><a href="#;" class="icon" onclick="openNav()"></li>
+            <i class="fa fa-bars"></i>
+        </ul>
+
+    </nav><br>
+    <div id="mySidenav" class="sidenav">
+        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./home.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+        <a href="#">Jobs</a>
+        <a href="#">My Profile</a>
+    </div>
+    <!-- Navbar section ends here -->
+
+    <!-- <main>                                [ this was my old ui code ]  
+        <section class="job-listing">
+            <div style="display: flex; width: 100%; justify-content: space-between;">
+                <h2>Job Listings</h2>
+                <div style="display: flex;">
+                    <button class="apply-button" onclick="CheckAll()"
+                        style="margin-right: 10px; background-color: green;" id="All">All </button>
+                    <button class="apply-button" onclick="CheckApplied()" id="Applied">Applied </button>
+                </div>
+            </div>
+            <div class="job-description" id='jd1'>
+                <div class="job-image">
+                    <img src="./pexels-helena-lopes-3688761.jpg" alt="Job 1">
+                </div>
+                <div class="job-details">
+                    <h3>Job Title 1</h3>
+                    <p>Company: Company A</p>
+                    <p>Location: City X</p>
+                    <p>Description: This is the description of Job 1. It's a great opportunity for someone with specific
+                        skills.</p>
+                    <div class="" style="display: flex;">
+                        <button class="apply-button" id="jb1" onclick="Applied('jb1','us1','jd1')">Apply Now</button>
+                        <button class="apply-button" id="us1" style="display: none; margin-left: 10px;"
+                            onclick="Unsubscribe('jb1','us1','jd1')">Unsubscribe</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="job-description" id='jd2'>
+                <div class="job-image">
+                    <img src="./pexels-anna-shvets-4226140.jpg" alt="Job 2">
+                </div>
+                <div class="job-details">
+                    <h3>Job Title 2</h3>
+                    <p>Company: Company B</p>
+                    <p>Location: City Y</p>
+                    <p>Description: This is the description of Job 2. It requires expertise in certain areas.</p>
+                    <div class="" style="display: flex;">
+                        <button class="apply-button" id="jb2" onclick="Applied('jb2','us2','jd2')">Apply Now</button>
+                        <button class="apply-button" id="us2" style="display: none; margin-left: 10px;"
+                            onclick="Unsubscribe('jb2','us2','jd2')">Unsubscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="job-description" id="jd3">
+                <div class="job-image">
+                    <img src="./pexels-helena-lopes-3688761.jpg" alt="Job 3">
+                </div>
+                <div class="job-details">
+                    <h3>Job Title 3</h3>
+                    <p>Company: Company A</p>
+                    <p>Location: City X</p>
+                    <p>Description: This is the description of Job 3. It's a great opportunity for someone with specific
+                        skills.</p>
+                    <div class="" style="display: flex;">
+                        <button class="apply-button" id="jb3" onclick="Applied('jb3','us3','jd3')">Apply Now</button>
+                        <button class="apply-button" id="us3" style="display: none; margin-left: 10px;"
+                            onclick="Unsubscribe('jb3','us3','jd3')">Unsubscribe</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="job-description" id="jd4">
+                <div class="job-image">
+                    <img src="./pexels-helena-lopes-3688761.jpg" alt="Job 4">
+                </div>
+                <div class="job-details">
+                    <h3>Job Title 4</h3>
+                    <p>Company: Company A</p>
+                    <p>Location: City X</p>
+                    <p>Description: This is the description of Job 4. It's a great opportunity for someone with specific
+                        skills.</p>
+                    <div class="" style="display: flex;">
+                        <button class="apply-button" id="jb4" onclick="Applied('jb4','us4','jd4')">Apply Now</button>
+                        <button class="apply-button" id="us4" style="display: none; margin-left: 10px;"
+                            onclick="Unsubscribe('jb4','us4','jd4')">Unsubscribe</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="job-description" id="jd5">
+                <div class="job-image">
+                    <img src="./pexels-helena-lopes-3688761.jpg" alt="Job 5">
+                </div>
+                <div class="job-details">
+                    <h3>Job Title 5</h3>
+                    <p>Company: Company A</p>
+                    <p>Location: City X</p>
+                    <p>Description: This is the description of Job 5. It's a great opportunity for someone with specific
+                        skills.</p>
+                    <div class="" style="display: flex;">
+                        <button class="apply-button" id="jb5" onclick="Applied('jb5','us5','jd5')">Apply Now</button>
+                        <button class="apply-button" id="us5" style="display: none; margin-left: 10px;"
+                            onclick="Unsubscribe('jb5','us5','jd5')">Unsubscribe</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main> -->
+
+    <main>
+        <div style="display: flex; width: 100%; justify-content: space-between; margin-bottom: 30px;">
+            <h2>Job Listings</h2>
+            <div style="display: flex; margin-bottom: 30px;">
+                <button class="apply-button" onclick="CheckAll()" style="margin-right: 10px; background-color: green;"
+                    id="All">All </button>
+                <button class="apply-button" onclick="CheckApplied()" id="Applied">Applied </button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="filter-tags-c">
+                        <ul id="filter-tags-list"></ul>
+                        <p class="clear-tags" id="js-clear-tags"> Clear</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <ul class="col-12" id="job-list">
+                    <li class="job-card new featured" id='jd1'>
+                        <div class="job-card__info">
+                            <div class="d-flex align-items-center">
+                                <div class="img-c"><img src="../assets/imgs/munish/pexels-helena-lopes-3688761.jpg" /></div>
+                                <div>
+                                    <div class="d-flex align-items-center">
+                                        <p>Photosnap</p>
+                                        <p class="tag-new">New!</p>
+                                        <p class="tag-featured">Featured</p>
+                                    </div>
+                                    <a href="#">
+                                        <h6>Senior Frontend Developer</h6>
+                                    </a>
+                                    <ul>
+                                        <li>1d ago</li>
+                                        <li>Full Time</li>
+                                        <li>USA Only</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="job-card__tags">
+                            <li>Frontened</li>
+                            <li>Senior</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+
+                        <div class="" style="display: flex;">
+                            <button class="apply-button" id="apply_jd1"
+                                onclick="Applied('apply_jd1','unsub_jd1','jd1')">Apply Now</button>
+                            <button class="apply-button" id="unsub_jd1" style="display: none; margin-left: 10px;"
+                                onclick="Unsubscribe('apply_jd1','unsub_jd1','jd1')">Unsubscribe</button>
+                        </div>
+
+
+                    </li>
+
+                    <li class="job-card new featured" id='jd2'>
+                        <div class="job-card__info">
+                            <div class="d-flex align-items-center">
+                                <div class="img-c"><img src="../assets/imgs/munish/pexels-anna-shvets-4226140.jpg" />
+                                </div>
+                                <div>
+                                    <div class="d-flex align-items-center">
+                                        <p>Manage</p>
+                                        <p class="tag-new">New!</p>
+                                        <p class="tag-featured">Featured</p>
+                                    </div>
+                                    <a href="#">
+                                        <h6>Fullstack Developer</h6>
+                                    </a>
+                                    <ul>
+                                        <li>1d ago</li>
+                                        <li>Part Time</li>
+                                        <li>Remote</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="job-card__tags">
+                            <li>Fullstack</li>
+                            <li>Midweight</li>
+                            <li>Python</li>
+                            <li>React</li>
+                        </ul>
+                        <div class="" style="display: flex;">
+                            <button class="apply-button" id="apply_jd2"
+                                onclick="Applied('apply_jd2','unsub_jd2','jd2')">Apply Now</button>
+                            <button class="apply-button" id="unsub_jd2" style="display: none; margin-left: 10px;"
+                                onclick="Unsubscribe('apply_jd2','unsub_jd2','jd2')">Unsubscribe</button>
+                        </div>
+                    </li>
+                    <li class="job-card new featured" id='jd3'>
+                        <div class="job-card__info">
+                            <div class="d-flex align-items-center">
+                                <div class="img-c"><img src="../assets/imgs/munish/pexels-helena-lopes-3688761.jpg" />
+                                </div>
+                                <div>
+                                    <div class="d-flex align-items-center">
+                                        <p>Account</p>
+                                        <p class="tag-new">New!</p>
+                                        <p class="tag-featured">Featured</p>
+                                    </div>
+                                    <a href="#">
+                                        <h6>Junior Frontend Developer</h6>
+                                    </a>
+                                    <ul>
+                                        <li>2d ago</li>
+                                        <li>Part Time</li>
+                                        <li>USA Only</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="job-card__tags">
+                            <li>Frontened</li>
+                            <li>Junior</li>
+                            <li>React</li>
+                            <li>Sass</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <div class="" style="display: flex;">
+                            <button class="apply-button" id="apply_jd3"
+                                onclick="Applied('apply_jd3','unsub_jd3','jd3')">Apply Now</button>
+                            <button class="apply-button" id="unsub_jd3" style="display: none; margin-left: 10px;"
+                                onclick="Unsubscribe('apply_jd3','unsub_jd3','jd3')">Unsubscribe</button>
+                        </div>
+                    </li>
+                    <li class="job-card new featured" id='jd4'>
+                        <div class="job-card__info">
+                            <div class="d-flex align-items-center">
+                                <div class="img-c"><img src="../assets/imgs/munish/pexels-anna-shvets-4226140.jpg" />
+                                </div>
+                                <div>
+                                    <div class="d-flex align-items-center">
+                                        <p>MyHome</p>
+                                        <p class="tag-new">New!</p>
+                                        <p class="tag-featured">Featured</p>
+                                    </div>
+                                    <a href="#">
+                                        <h6>Junior Frontend Developer</h6>
+                                    </a>
+                                    <ul>
+                                        <li>5d ago</li>
+                                        <li>Contract</li>
+                                        <li>USA Only</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="job-card__tags">
+                            <li>Frontened</li>
+                            <li>Junior</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <div class="" style="display: flex;">
+                            <button class="apply-button" id="apply_jd4"
+                                onclick="Applied('apply_jd4','unsub_jd4','jd4')">Apply Now</button>
+                            <button class="apply-button" id="unsub_jd4" style="display: none; margin-left: 10px;"
+                                onclick="Unsubscribe('apply_jd4','unsub_jd4','jd4')">Unsubscribe</button>
+                        </div>
+                    </li>
+                    <li class="job-card new featured" id='jd5'>
+                        <div class="job-card__info">
+                            <div class="d-flex align-items-center">
+                                <div class="img-c"><img src="../assets/imgs/munish/pexels-helena-lopes-3688761.jpg" /></div>
+                                <div>
+                                    <div class="d-flex align-items-center">
+                                        <p>Loop Studios</p>
+                                        <p class="tag-new">New!</p>
+                                        <p class="tag-featured">Featured</p>
+                                    </div>
+                                    <a href="#">
+                                        <h6>Software Engineer</h6>
+                                    </a>
+                                    <ul>
+                                        <li>1w ago</li>
+                                        <li>Full Time</li>
+                                        <li>Worldwide</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="job-card__tags">
+                            <li>FullStack</li>
+                            <li>Midweight</li>
+                            <li>JavaScript</li>
+                            <li>Sass</li>
+                            <li>Ruby</li>
+                        </ul>
+                        <div class="" style="display: flex;">
+                            <button class="apply-button" id="apply_jd5"
+                                onclick="Applied('apply_jd5','unsub_jd5','jd5')">Apply Now</button>
+                            <button class="apply-button" id="unsub_jd5" style="display: none; margin-left: 10px;"
+                                onclick="Unsubscribe('apply_jd5','unsub_jd5','jd5')">Unsubscribe</button>
+                        </div>
+                    </li>
+                    <li class="job-card new featured" id='jd6'>
+                        <div class="job-card__info">
+                            <div class="d-flex align-items-center">
+                                <div class="img-c"><img src="../assets/imgs/munish/pexels-anna-shvets-4226140.jpg" />
+                                </div>
+                                <div>
+                                    <div class="d-flex align-items-center">
+                                        <p>FaceIt</p>
+                                        <p class="tag-new">New!</p>
+                                        <p class="tag-featured">Featured</p>
+                                    </div>
+                                    <a href="#">
+                                        <h6>Senior Frontend Developer</h6>
+                                    </a>
+                                    <ul>
+                                        <li>2w ago</li>
+                                        <li>Full Time</li>
+                                        <li>UK only</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="job-card__tags">
+                            <li>Backend</li>
+                            <li>Junior</li>
+                            <li>Ruby</li>
+                            <li>RoR</li>
+                        </ul>
+                        <div class="" style="display: flex;">
+                            <button class="apply-button" id="apply_jd6"
+                                onclick="Applied('apply_jd6','unsub_jd6','jd6')">Apply Now</button>
+                            <button class="apply-button" id="unsub_jd6" style="display: none; margin-left: 10px;"
+                                onclick="Unsubscribe('apply_jd6','unsub_jd6','jd6')">Unsubscribe</button>
+                        </div>
+                    </li>
+                    <li class="job-card new featured" id='jd7'>
+                        <div class="job-card__info">
+                            <div class="d-flex align-items-center">
+                                <div class="img-c"><img src="../assets/imgs/munish/pexels-anna-shvets-4226140.jpg" />
+                                </div>
+                                <div>
+                                    <div class="d-flex align-items-center">
+                                        <p>Shotly</p>
+                                        <p class="tag-new">New!</p>
+                                        <p class="tag-featured">Featured</p>
+                                    </div>
+                                    <a href="#">
+                                        <h6>Junior Developer</h6>
+                                    </a>
+                                    <ul>
+                                        <li>1w ago</li>
+                                        <li>Full Time</li>
+                                        <li>Worldwide</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="job-card__tags">
+                            <li>Frontened</li>
+                            <li>Junior</li>
+                            <li>HTML</li>
+                            <li>Sass</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <div class="" style="display: flex;">
+                            <button class="apply-button" id="apply_jd7"
+                                onclick="Applied('apply_jd7','unsub_jd7','jd7')">Apply Now</button>
+                            <button class="apply-button" id="unsub_jd7" style="display: none; margin-left: 10px;"
+                                onclick="Unsubscribe('apply_jd7','unsub_jd7','jd7')">Unsubscribe</button>
+                        </div>
+                    </li>
+                    <li class="job-card new featured" id='jd8'>
+                        <div class="job-card__info">
+                            <div class="d-flex align-items-center">
+                                <div class="img-c"><img src="../assets/imgs/munish/pexels-helena-lopes-3688761.jpg" />
+                                </div>
+                                <div>
+                                    <div class="d-flex align-items-center">
+                                        <p>Insure</p>
+                                        <p class="tag-new">New!</p>
+                                        <p class="tag-featured">Featured</p>
+                                    </div>
+                                    <a href="#">
+                                        <h6>Junior Frontend Developer</h6>
+                                    </a>
+                                    <ul>
+                                        <li>1w ago</li>
+                                        <li>Full Time</li>
+                                        <li>USA Only</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="job-card__tags">
+                            <li>Frontened</li>
+                            <li>Junior</li>
+                            <li>Vue</li>
+                            <li>Javascript</li>
+                            <li>Sass</li>
+                        </ul>
+                        <div class="" style="display: flex;">
+                            <button class="apply-button" id="apply_jd8"
+                                onclick="Applied('apply_jd8','unsub_jd8','jd8')">Apply Now</button>
+                            <button class="apply-button" id="unsub_jd8" style="display: none; margin-left: 10px;"
+                                onclick="Unsubscribe('apply_jd8','unsub_jd8','jd8')">Unsubscribe</button>
+                        </div>
+                    </li>
+                    <li class="job-card new featured" id='jd9'>
+                        <div class="job-card__info">
+                            <div class="d-flex align-items-center">
+                                <div class="img-c"><img src="../assets/imgs/munish/pexels-helena-lopes-3688761.jpg" /></div>
+                                <div>
+                                    <div class="d-flex align-items-center">
+                                        <p>Eyecam Co.</p>
+                                        <p class="tag-new">New!</p>
+                                        <p class="tag-featured">Featured</p>
+                                    </div>
+                                    <a href="#">
+                                        <h6>Senior Frontend Developer</h6>
+                                    </a>
+                                    <ul>
+                                        <li>1w ago</li>
+                                        <li>Full Time</li>
+                                        <li>Worldwide</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="job-card__tags">
+                            <li>Fullstack</li>
+                            <li>Midweight</li>
+                            <li>Javascipt</li>
+                            <li>Django</li>
+                            <li>Python</li>
+                        </ul>
+                        <div class="" style="display: flex;">
+                            <button class="apply-button" id="apply_jd9"
+                                onclick="Applied('apply_jd9','unsub_jd9','jd9')">Apply Now</button>
+                            <button class="apply-button" id="unsub_jd9" style="display: none; margin-left: 10px;"
+                                onclick="Unsubscribe('apply_jd9','unsub_jd9','jd9')">Unsubscribe</button>
+                        </div>
+                    </li>
+                    <li class="job-card new featured" id='jd10'>
+                        <div class="job-card__info">
+                            <div class="d-flex align-items-center">
+                                <div class="img-c"><img src="../assets/imgs/munish/pexels-anna-shvets-4226140.jpg" />
+                                </div>
+                                <div>
+                                    <div class="d-flex align-items-center">
+                                        <p>The Air Filter Company</p>
+                                        <p class="tag-new">New!</p>
+                                        <p class="tag-featured">Featured</p>
+                                    </div>
+                                    <a href="#">
+                                        <h6>Frontend Developer</h6>
+                                    </a>
+                                    <ul>
+                                        <li>1mo ago</li>
+                                        <li>Part Time</li>
+                                        <li>Worldwide</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="job-card__tags">
+                            <li>Frontened</li>
+                            <li>Junior</li>
+                            <li>React</li>
+                            <li>Sass</li>
+                            <li>Javascript</li>
+                        </ul>
+                        <div class="" style="display: flex;">
+                            <button class="apply-button" id="apply_jd10"
+                                onclick="Applied('apply_jd10','unsub_jd10','jd10')">Apply Now</button>
+                            <button class="apply-button" id="unsub_jd10" style="display: none; margin-left: 10px;"
+                                onclick="Unsubscribe('apply_jd10','unsub_jd10','jd10')">Unsubscribe</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Footer section -->
+    <div class="footer">
+        <div class="row">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+
+        <div class="row">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About </a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="row">
+            Humber &copy; 2023 - All rights reserved
+        </div>
+    </div>
+    <!-- Footer section ends here-->
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    <script src="../assets/js/jobBoardPage.js"></script>
+
+
+</body>
+
+</html>
