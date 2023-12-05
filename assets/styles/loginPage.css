@@ -20,7 +20,7 @@ body {
 }
 
 .wrapper > .left {
-  width: 45%;
+  width: 40%;
   padding: 3rem;
   display: flex;
   flex-direction: column;
@@ -178,13 +178,37 @@ body {
 }
 
 .wrapper > .right {
-  width: 55%;
+  width: 60%;
   display: flex;
 }
 
 .wrapper > .right > img {
   width: 100%;
   border-radius: 2.5rem 1rem 1rem 2.5rem;
+}
+
+.toast {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4caf50;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  animation: fadeInOut 2s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  10%,
+  90% {
+    opacity: 1;
+  }
 }
 
 /* media query to accomodate styling to screen width lower than 600px */
