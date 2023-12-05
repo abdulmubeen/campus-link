@@ -35,3 +35,18 @@ num.map((num) => {
       }
     });
 });
+
+const userMenuIcon = document.querySelector(".user-drop-btn");
+const userDropdown = document.getElementById("userDropdown");
+
+userMenuIcon.addEventListener("click", () => {
+  userDropdown.classList.toggle("show");
+});
+
+// Close the dropdown menu if the user clicks outside of it
+// Close the dropdown menu if the user clicks outside of it
+window.addEventListener("click", (event) => {
+  if (!event.target.closest(".avatar")) {
+    userDropdown.classList.remove("show");
+  }
+});

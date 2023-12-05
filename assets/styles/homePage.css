@@ -63,6 +63,68 @@ header > .header-icons > a > i:hover {
 header > .avatar > a > img {
   width: 3rem;
   margin-left: 2rem;
+  cursor: pointer;
+}
+
+header > .avatar > .user-menu {
+  display: none;
+  opacity: 0;
+}
+
+header > .avatar > .user-menu.show {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: white;
+  width: 12%;
+  border-radius: 0.75rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 1.25rem 1rem 0.5rem;
+  right: 3.5%;
+  margin-top: 0.75rem;
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
+}
+
+header > .avatar > .user-menu > a {
+  display: flex;
+  align-items: center;
+  color: #555;
+  text-decoration: none;
+  margin-bottom: 0.85rem;
+  padding-bottom: 0.85rem;
+}
+
+header > .avatar > .user-menu > a.faq {
+  margin-bottom: 0.25rem;
+}
+
+header > .avatar > .user-menu > a:last-child {
+  margin-bottom: 0;
+  padding-top: 0.85rem;
+  border-top: solid #ebebeb 1px;
+}
+
+header > .avatar > .user-menu > a:hover {
+  color: black;
+}
+
+header > .avatar > .user-menu > a > i {
+  padding-right: 0.75rem;
+  font-size: 0.8rem;
+}
+
+header > .avatar > .user-menu > a > i.logout {
+  color: #ee4b68;
+}
+
+header > .avatar > .user-menu > a > span {
+  font-size: 0.8rem;
+}
+
+header > .avatar > .user-menu > a > span.logout {
+  color: black;
 }
 
 .main-content {
@@ -405,6 +467,12 @@ header > .avatar > a > img {
   .header > header {
     margin-bottom: 1rem;
   }
+  .left > nav > ul > li > a > span {
+    display: none;
+  }
+  header > .avatar > .user-menu.show {
+    width: fit-content;
+  }
   .left {
     width: 100%;
     margin-left: 0;
@@ -453,6 +521,9 @@ header > .avatar > a > img {
   header > .avatar > a > img {
     width: 2rem;
     margin-left: 0.8rem;
+  }
+  header > .avatar > .user-menu.show {
+    width: fit-content;
   }
   .left > nav {
     padding: 0 1rem;
