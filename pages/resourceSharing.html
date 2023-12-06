@@ -84,15 +84,18 @@
                         <h3>Select files to share</h3>
                     </div>
                 </div>
-                <div class="header-button">
+                <div class="header-button" id="copyLinkButton">
                     <i class="fa-solid fa-copy"></i>
                     <span>Copy link</span>
+                </div>
+                <div class="notification" id="copyNotification">
+                    Link copied to clipboard!
                 </div>
             </header>
             <div class="body">
                 <div class="body-header">
                     <div class="body-title">
-                        <i class="fa-solid fa-chevron-up"></i>
+                        <i class="fa-solid fa-chevron-up file-btn"></i>
                         <span>Files</span>
                     </div>
                     <div class="body-sort">
@@ -104,12 +107,12 @@
                             </div>
                         </div>
                         <div class="sort-icons">
-                            <i class="fa-solid fa-table-cells-large active"></i>
-                            <i class="fa-solid fa-list"></i>
+                            <i class="fa-solid fa-table-cells-large active" id="grid-view"></i>
+                            <i class="fa-solid fa-list" id="list-view"></i>
                         </div>
                     </div>
                 </div>
-                <div class="body-content">
+                <div class="body-content grid-view" id="bodyContent">
                     <div class="file-card">
                         <div class="file-main">
                             <div class="file-header">
@@ -262,6 +265,7 @@
         </div>
     </div>
     <!-- Footer section ends here-->
+    <script src="../assets/js/resourceSharing.js"></script>
 </body>
 
 </html>
