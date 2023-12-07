@@ -56,7 +56,7 @@
 
 ## Learning Curve and Challenges
 
-- Learned how to implement animations using ![GSAP](https://gsap.com/) and ![CSS Keyframes](https://www.joshwcomeau.com/animation/keyframe-animations/)
+- Learned how to implement animations using [GSAP](https://gsap.com/) and [CSS Keyframes](https://www.joshwcomeau.com/animation/keyframe-animations/)
 
 ## Resources
 
