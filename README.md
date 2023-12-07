@@ -46,6 +46,9 @@
 - [x] Added form validation to the Login Page
 - [x] Added GSAP Animation to the SignIn Button
 - [x] Added comment functionality for the post
+- [x] Made the navigation responsive
+- [x] Added functionality to send a message in the Message Page
+- [x] Added user interaction using keyframes in the Resource Page
 
 ### Munish Patel
 
@@ -53,7 +56,7 @@
 
 ## Learning Curve and Challenges
 
-- None as of now
+- Learned how to implement animations using ![GSAP](https://gsap.com/) and ![CSS Keyframes](https://www.joshwcomeau.com/animation/keyframe-animations/)
 
 ## Resources
 
