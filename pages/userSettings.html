@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Settings</title>
+    <link rel="stylesheet" href="../assets/styles/userSettings.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div class="main-header">
+        <span>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            111 222 3333
+        </span>
+        <ul>
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+    <!-- Header section ends here -->
+
+    <!-- Navbar section -->
+    <nav class="main-nav">
+        <div class="logo">
+            <img src="../assets/imgs/logo.png" alt="logo.png">
+        </div>
+        <div class="toggle-button">
+            <a href="#"><i class="fa fa-bars burger-menu" aria-hidden="true"></i></a>
+        </div>
+        <ul class="main-menu">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./newsfeedPage.html">News Feed</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="./jobBoard.html">Job Board</a></li>
+            <li><a href="./groupsPage.html">Groups</a></li>
+            <li><a href="./resourceSharing.html">Resource Sharing</a></li>
+        </ul>
+    </nav>
+    <div class="main-side-nav">
+        <a href="#" class="close-button">&times;</a>
+        <a href="./newsfeedPage.html">News Feed</a>
+        <a href="#">Explore</a>
+        <a href="./jobBoard.html">Job Board</a>
+        <a href="./groupsPage.html">Groups</a>
+        <a href="./resourceSharing.html">Resource Sharing</a>
+    </div>
+    <!-- Navbar section ends here -->
+
+    <div class="wrapper">
+        <div class="left">
+            <nav>
+                <ul>
+                    <li class="active"><a class="active"><i class="fa-solid fa-user"></i>
+                            <span>My Profile</span></a></li>
+                    <li><a><i class="fa-solid fa-money-bill"></i>
+                            <span>Billing</span>
+                        </a></li>
+                    <li><a><i class="fa-solid fa-shield"></i>
+                            <span>Security</span></a></li>
+                    <li onclick="deleteAccounnt();"><a><i class="fa-solid fa-trash"></i>
+                            <span>Delete Account</span></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <div class="my-profile" id="myProfile">
+                <div class="user-details">
+                    <div class="user">
+                        <div class="avatar">
+                            <img src="../assets/imgs/abdul/avatar.png" alt="avatar">
+                        </div>
+                        <div class="name">
+                            <h4 class="uname">Kevin Jade</h4>
+                            <span class="uemail">kevinj@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="edit">
+                        <button class="edit-btn btn1" type="button">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="user-info">
+                    <div class="info">
+                        <h3>Personal Information</h3>
+                        <div class="pinfo">
+                            <div class="left-info">
+                                <div class="fname">
+                                    <h4>First Name</h4>
+                                    <span>Jack</span>
+                                </div>
+                                <div class="email">
+                                    <h4>Email Address</h4>
+                                    <span>jack@gmail.com</span>
+                                </div>
+                                <div class="bio">
+                                    <h4>Bio</h4>
+                                    <span>Student</span>
+                                </div>
+                            </div>
+                            <div class="right-info">
+                                <div class="lname">
+                                    <h4>Last Name</h4>
+                                    <span>Jade</span>
+                                </div>
+                                <div class="phone">
+                                    <h4>Phone Number</h4>
+                                    <span>+1234567890</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="edit">
+                        <button class="edit-btn btn2" type="button">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close" id="closeModalBtn">x</span>
+        <div class="modal-content">
+            <!-- Form inside the modal -->
+            <form id="myForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- Close button -->
+
+                <!-- Submit button -->
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal1" class="modal">
+        <div class="modal-content">
+            <p>Your form has been submitted!</p>
+            <!-- Close button -->
+            <button class="closeBtn" id="closeModalBtn2">Close</button>
+        </div>
+    </div>
+
+    <div id="myModal2" class="modal">
+        <div class="modal-content">
+            <p>Do you want to delete your account?</p>
+            <div class="btns">
+                <button class="yesBtn" id="yesBtn" onclick="window.location.href = '../index.html'">Yes</button>
+                <button class="closeBtn" id="closeModalBtn2">No</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <div class="footer">
+        <div class="row">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+
+        <div class="row">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About </a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="row">
+            Campus Link &copy; 2023 - All rights reserved
+        </div>
+    </div>
+    <!-- Footer section ends here-->
+    <script src="../assets/js/userSettings.js"></script>
+    <script>
+        // Get the modal element
+        var modal = document.getElementById("myModal");
+        var modal1 = document.getElementById("myModal1");
+        var modal2 = document.getElementById("myModal2");
+
+        // Get the button that opens the modal
+        var btn = document.querySelector(".btn1");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementById("closeModalBtn");
+        var span2 = document.getElementById("closeModalBtn2");
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function () {
+            modal.style.display = "flex";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+        span2.onclick = function () {
+            modal1.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            } else if (event.target == modal1) {
+                modal1.style.display = "none";
+            } else if (event.target == modal2) {
+                modal2.style.display = "none";
+            }
+        }
+
+        const deleteAccounnt = () => {
+            modal2.style.display = "flex";
+        }
+
+        // Event listener for form submission (you can add your own logic)
+        document.getElementById("myForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            modal1.style.display = "flex";
+            modal.style.display = "none"
+            // You can add your own logic for form submission here
+        });
+    </script>
+</body>
+
+</html>

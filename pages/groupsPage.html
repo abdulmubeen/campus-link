@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles/groupsPage.css">
+    <!-- Font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Group Section</title>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div class="main-header">
+        <span>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            111 222 3333
+        </span>
+        <ul>
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+    <!-- Header section ends here -->
+
+    <!-- Navbar section -->
+    <nav class="main-nav">
+        <div class="logo">
+            <img src="../assets/imgs/logo.png" alt="logo.png">
+        </div>
+        <div class="toggle-button">
+            <a href="#"><i class="fa fa-bars burger-menu" aria-hidden="true"></i></a>
+        </div>
+        <ul class="main-menu">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./newsfeedPage.html">News Feed</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="./jobBoard.html">Job Board</a></li>
+            <li><a href="./groupsPage.html">Groups</a></li>
+            <li><a href="./resourceSharing.html">Resource Sharing</a></li>
+        </ul>
+    </nav>
+    <div class="main-side-nav">
+        <a href="#" class="close-button">&times;</a>
+        <a href="./newsfeedPage.html">News Feed</a>
+        <a href="#">Explore</a>
+        <a href="./jobBoard.html">Job Board</a>
+        <a href="./groupsPage.html">Groups</a>
+        <a href="./resourceSharing.html">Resource Sharing</a>
+    </div>
+    <!-- Navbar section ends here -->
+    <!-- Main container starts -->
+    <div class="body">
+        <div class="container">
+            <h2>Create or Join a Group</h2>
+
+            <!-- Join Group Form -->
+            <form id="joinForm">
+                <label for="joinName">Your Name:</label>
+                <input type="text" id="joinName" name="joinName" required>
+
+                <label for="joinGroupCode">Group Code:</label>
+                <input type="text" id="joinGroupCode" name="joinGroupCode" required>
+
+                <button type="submit" onclick="joinGroup()">Join Group</button>
+            </form>
+
+            <hr>
+
+            <!-- Create Group Form -->
+            <form id="createForm">
+                <label for="createGroupName">Group Name:</label>
+                <input type="text" id="createGroupName" name="createGroupName" required>
+
+                <label for="createGroupCode">Group Code:</label>
+                <input type="text" id="createGroupCode" name="createGroupCode" required>
+
+                <button type="submit" onclick="createGroup()">Create Group</button>
+            </form>
+        </div>
+    </div>
+    <!-- Footer section -->
+    <div class="footer">
+        <div class="row">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+
+        <div class="row">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About </a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="row">
+            Humber &copy; 2023 - All rights reserved
+        </div>
+    </div>
+    <!-- Footer section ends here-->
+    <script src="../assets/js/groupsPage.js"></script>
+</body>
+
+</html>

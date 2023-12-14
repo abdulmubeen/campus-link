@@ -460,6 +460,28 @@ header > .avatar > .user-menu > a > span.logout {
   margin: 1.25rem 0;
 }
 
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    color: inherit; /* Inherit the color from the parent */
+  }
+
+  50% {
+    transform: scale(1.2);
+    color: rgb(3, 199, 3); /* Green color */
+  }
+
+  100% {
+    transform: scale(1);
+    color: inherit; /* Inherit the color from the parent */
+  }
+}
+
+.animate-icon {
+  animation: pulse 0.5s ease-in-out;
+  color: rgb(3, 199, 3); /* Initial green color */
+}
+
 @media screen and (max-width: 950px) {
   .main-content {
     flex-direction: column;

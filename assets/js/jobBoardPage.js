@@ -9,7 +9,7 @@ function CheckAll() {
 
   const jobCards = document.querySelectorAll("#job-list .job-card");
   jobCards.forEach((job) => {
-    job.style.display = "block";
+    job.style.display = "flex";
   });
 }
 
@@ -24,7 +24,7 @@ function CheckApplied() {
   jobCards.forEach((job) => {
     const jobId = job.id;
     if (arrayapplied.includes(jobId)) {
-      job.style.display = "block";
+      job.style.display = "flex";
     } else {
       job.style.display = "none";
     }
@@ -43,8 +43,6 @@ function Applied(applyButtonId, unsubscribeButtonId, jobId) {
   applyButton.style.background = "green";
   applyButton.innerText = "Applied";
   unsubscribeButton.style.display = "block";
-
-  alert("Successfully Applied");
 }
 
 // Function to unsubscribe from a job
@@ -56,8 +54,6 @@ function Unsubscribe(applyButtonId, unsubscribeButtonId, jobId) {
   applyButton.style.background = "#0f9bffed";
   applyButton.innerText = "Apply Now";
   unsubscribeButton.style.display = "none";
-
-  alert("Successfully Unsubscribed");
 }
 
 window.addEventListener("DOMContentLoaded", (event) => {
@@ -133,4 +129,26 @@ window.addEventListener("DOMContentLoaded", (event) => {
   attachCardTagClick();
   attachFilterTagCloseClick();
   refreshList();
+});
+
+window.addEventListener("load", (event) => {
+  const openButton = document.querySelector(".toggle-button a");
+  const closeButton = document.querySelector(".close-button");
+  const sideNav = document.querySelector(".main-side-nav");
+
+  openButton.addEventListener("click", () => {
+    sideNav.style.width = "250px";
+    sideNav.style.animation = "slideIn 0.5s forwards";
+  });
+
+  closeButton.addEventListener("click", () => {
+    sideNav.style.animation = "slideOut 0.5s forwards";
+  });
+
+  // Close the side nav when clicking outside of it
+  document.addEventListener("click", (event) => {
+    if (!sideNav.contains(event.target) && !openButton.contains(event.target)) {
+      sideNav.style.animation = "slideOut 0.5s forwards";
+    }
+  });
 });

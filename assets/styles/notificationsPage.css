@@ -1,0 +1,335 @@
+@import url("./default.css");
+
+:root {
+  --Red: hsl(1, 90%, 64%);
+  --Blue: hsl(219, 85%, 26%);
+  --White: hsl(0, 0%, 100%);
+  --Very-light-grayish-blue: hsl(210, 60%, 98%);
+  --Light-grayish-blue-1: hsl(211, 68%, 94%);
+  --Light-grayish-blue-2: hsl(205, 33%, 90%);
+  --Grayish-blue: hsl(219, 14%, 63%);
+  --Dark-grayish-blue: hsl(219, 12%, 42%);
+  --Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+.box {
+  min-height: 100vh;
+  margin: auto;
+  background-color: var(--Very-light-grayish-blue);
+}
+.container {
+  margin: 2rem;
+  width: 900px;
+  background-color: var(--White);
+  padding: 1.5rem 1rem;
+  border-radius: 0.5rem;
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.notifbox {
+  display: flex;
+  align-items: center;
+}
+#notifes {
+  background-color: var(--Blue);
+  margin-left: 0.5rem;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  color: var(--White);
+  font-weight: 800;
+  border-radius: 0.5rem;
+}
+#mark_all {
+  cursor: pointer;
+}
+#mark_all:hover {
+  color: var(--Blue);
+}
+p {
+  color: var(--Dark-grayish-blue);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.notifcard {
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+img {
+  width: 50px;
+}
+.description {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+strong {
+  color: var(--Very-dark-blue);
+  cursor: pointer;
+}
+strong:hover {
+  color: var(--Blue);
+}
+.unread {
+  background-color: var(--Light-grayish-blue-1) !important;
+}
+.unread p:first-of-type::after {
+  content: " ";
+  background-color: var(--Red);
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+}
+.message_card {
+  display: flex;
+  align-items: center;
+}
+.message {
+  padding: 1rem;
+  border: 1px solid var(--Light-grayish-blue-2);
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin: 0 0 0 5rem;
+}
+.message:hover {
+  background-color: var(--Light-grayish-blue-1);
+}
+.chess_img {
+  margin-left: auto;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  .box {
+    min-height: 100vh;
+    margin: auto;
+    background-color: var(--Very-light-grayish-blue);
+  }
+  .container {
+    margin: 2rem;
+    width: 90%;
+    /* background-color: var(--White); */
+    padding: 1.5rem 1rem;
+    border-radius: 0.5rem;
+  }
+}
+@media (max-width: 720px) {
+  .box {
+    min-height: 100vh;
+    margin: auto;
+    background-color: var(--Very-light-grayish-blue);
+  }
+  .container {
+    margin: 2rem;
+    width: 90%;
+    background-color: var(--White);
+    padding: 1.5rem 1rem;
+    border-radius: 0.5rem;
+  }
+}
+@media (max-width: 900px) {
+  .box {
+    min-height: 100vh;
+    margin: auto;
+    background-color: var(--Very-light-grayish-blue);
+  }
+  .container {
+    margin: 2rem;
+    width: 90%;
+    background-color: var(--White);
+    padding: 1.5rem 1rem;
+    border-radius: 0.5rem;
+  }
+}
+@media (max-width: 400px) {
+  .box {
+    min-height: 100vh;
+    margin: auto;
+    background-color: var(--Very-light-grayish-blue);
+  }
+  .container {
+    margin: 2rem;
+    width: 90%;
+    background-color: var(--White);
+    padding: 1.5rem 1rem;
+    border-radius: 0.5rem;
+  }
+}
+@media (max-width: 90px) {
+  .box {
+    min-height: 100vh;
+    margin: auto;
+    background-color: var(--Very-light-grayish-blue);
+  }
+  .container {
+    margin: 2rem;
+    width: 90%;
+    background-color: var(--White);
+    padding: 1.5rem 1rem;
+    border-radius: 0.5rem;
+  }
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+body > .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 25px;
+  background: #0f9bffed; /*header color */
+}
+
+body > .header > ul {
+  list-style: none;
+  display: flex;
+}
+
+body > .header > span {
+  color: #fff;
+}
+
+body > .header > ul > li {
+  margin: 0 12px;
+}
+
+body > .header > ul > li > a {
+  color: #fff;
+}
+
+body > .header > ul > li > a:hover {
+  color: #222;
+}
+
+body > nav {
+  background-color: #222;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+}
+
+body > nav > .toggle-button > a,
+body > nav > ul > li > a {
+  color: #fff;
+}
+
+body > nav > .toggle-button > a:hover,
+body > nav > ul > li > a:hover {
+  color: #0f9bffed;
+}
+
+body > nav > .logo {
+  flex: 1;
+}
+
+body > nav > .logo > a {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+
+body > nav > .logo > h3 {
+  color: #fff;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+body > nav > .menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+body > nav > .menu > li {
+  padding: 15px 10px;
+  font-size: 20px;
+}
+
+body > nav > .toggle-button {
+  font-size: 30px;
+  display: none;
+} /*      Not Working right now because we need javascript for that */
+
+/* Footer Section */
+.footer {
+  background: #222;
+  padding: 30px 0px;
+  font-family: "Play", sans-serif;
+  text-align: center;
+}
+
+.footer .row {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: #ffffff;
+  font-size: 0.8em;
+}
+
+.footer .row a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+.footer .row a:hover {
+  color: #0f9bffed;
+}
+
+.footer .row ul {
+  width: 100%;
+}
+
+.footer .row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .row a i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 60px) {
+  nav {
+    display: block;
+    position: relative;
+    padding: 15px 20px;
+  }
+  .menu {
+    margin-top: 15px;
+    display: none;
+  }
+}
+@media (max-width: 720px) {
+  .footer {
+    text-align: left;
+    padding: 5%;
+  }
+  .footer .row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+  }
+  .footer .row a i {
+    margin: 0% 3%;
+  }
+}

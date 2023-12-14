@@ -12,46 +12,43 @@
 <body>
 
     <!-- Header Section -->
-    <div class="header">
-        <span><i class="fa fa-phone" aria-hidden="true"> 111 222 3333</i></span>
+    <div class="main-header">
+        <span>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            111 222 3333
+        </span>
         <ul>
             <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
             <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
             <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
         </ul>
     </div>
-    <!-- header section ends here -->
+    <!-- Header section ends here -->
 
-
-    <!-- Nav bar section -->
-    <nav>
+    <!-- Navbar section -->
+    <nav class="main-nav">
         <div class="logo">
-            <img src="../assets/imgs/logo.png"> 
-            <h3></h3>
+            <img src="../assets/imgs/logo.png" alt="logo.png">
         </div>
         <div class="toggle-button">
-            <a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-bars burger-menu" aria-hidden="true"></i></a>
         </div>
-        <ul class="menu" id="myMenu">
+        <ul class="main-menu">
             <li><a href="./home.html">Home</a></li>
-            <li><a href="#">About </a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Jobs</a></li>
-            <li><a href="#">My Profile</a></li>
-            <li><a href="#;" class="icon" onclick="openNav()"></li>
-            <i class="fa fa-bars"></i>
+            <li><a href="./newsfeedPage.html">News Feed</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="./jobBoard.html">Job Board</a></li>
+            <li><a href="./groupsPage.html">Groups</a></li>
+            <li><a href="./resourceSharing.html">Resource Sharing</a></li>
         </ul>
-
-    </nav><br>
-    <div id="mySidenav" class="sidenav">
-        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="./home.html">Home</a>
-        <a href="#">About</a>
-        <a href="#">Blog</a>
-        <a href="#">Contact</a>
-        <a href="#">Jobs</a>
-        <a href="#">My Profile</a>
+    </nav>
+    <div class="main-side-nav">
+        <a href="#" class="close-button">&times;</a>
+        <a href="./newsfeedPage.html">News Feed</a>
+        <a href="#">Explore</a>
+        <a href="./jobBoard.html">Job Board</a>
+        <a href="./groupsPage.html">Groups</a>
+        <a href="./resourceSharing.html">Resource Sharing</a>
     </div>
     <!-- Navbar section ends here -->
 
@@ -163,14 +160,14 @@
         <div style="display: flex; width: 100%; justify-content: space-between; margin-bottom: 30px;">
             <h2>Job Listings</h2>
             <div style="display: flex; margin-bottom: 30px;">
-                <button class="apply-button" onclick="CheckAll()" style="margin-right: 10px; background-color: green;"
-                    id="All">All </button>
-                <button class="apply-button" onclick="CheckApplied()" id="Applied">Applied </button>
+                <button class="apply-button-all" onclick="CheckAll()"
+                    style="margin-right: 10px; background-color: green;" id="All">All </button>
+                <button class="apply-button-applied" onclick="CheckApplied()" id="Applied">Applied </button>
             </div>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div>
                     <div class="filter-tags-c">
                         <ul id="filter-tags-list"></ul>
                         <p class="clear-tags" id="js-clear-tags"> Clear</p>
@@ -178,11 +175,12 @@
                 </div>
             </div>
             <div class="row">
-                <ul class="col-12" id="job-list">
+                <ul id="job-list">
                     <li class="job-card new featured" id='jd1'>
                         <div class="job-card__info">
                             <div class="d-flex align-items-center">
-                                <div class="img-c"><img src="../assets/imgs/munish/pexels-helena-lopes-3688761.jpg" /></div>
+                                <div class="img-c"><img src="../assets/imgs/munish/pexels-helena-lopes-3688761.jpg" />
+                                </div>
                                 <div>
                                     <div class="d-flex align-items-center">
                                         <p>Photosnap</p>
@@ -211,7 +209,7 @@
                         <div class="" style="display: flex;">
                             <button class="apply-button" id="apply_jd1"
                                 onclick="Applied('apply_jd1','unsub_jd1','jd1')">Apply Now</button>
-                            <button class="apply-button" id="unsub_jd1" style="display: none; margin-left: 10px;"
+                            <button class="apply-button-unsub" id="unsub_jd1" style="display: none; margin-left: 10px;"
                                 onclick="Unsubscribe('apply_jd1','unsub_jd1','jd1')">Unsubscribe</button>
                         </div>
 
@@ -249,7 +247,7 @@
                         <div class="" style="display: flex;">
                             <button class="apply-button" id="apply_jd2"
                                 onclick="Applied('apply_jd2','unsub_jd2','jd2')">Apply Now</button>
-                            <button class="apply-button" id="unsub_jd2" style="display: none; margin-left: 10px;"
+                            <button class="apply-button-unsub" id="unsub_jd2" style="display: none; margin-left: 10px;"
                                 onclick="Unsubscribe('apply_jd2','unsub_jd2','jd2')">Unsubscribe</button>
                         </div>
                     </li>
@@ -285,7 +283,7 @@
                         <div class="" style="display: flex;">
                             <button class="apply-button" id="apply_jd3"
                                 onclick="Applied('apply_jd3','unsub_jd3','jd3')">Apply Now</button>
-                            <button class="apply-button" id="unsub_jd3" style="display: none; margin-left: 10px;"
+                            <button class="apply-button-unsub" id="unsub_jd3" style="display: none; margin-left: 10px;"
                                 onclick="Unsubscribe('apply_jd3','unsub_jd3','jd3')">Unsubscribe</button>
                         </div>
                     </li>
@@ -320,14 +318,15 @@
                         <div class="" style="display: flex;">
                             <button class="apply-button" id="apply_jd4"
                                 onclick="Applied('apply_jd4','unsub_jd4','jd4')">Apply Now</button>
-                            <button class="apply-button" id="unsub_jd4" style="display: none; margin-left: 10px;"
+                            <button class="apply-button-unsub" id="unsub_jd4" style="display: none; margin-left: 10px;"
                                 onclick="Unsubscribe('apply_jd4','unsub_jd4','jd4')">Unsubscribe</button>
                         </div>
                     </li>
                     <li class="job-card new featured" id='jd5'>
                         <div class="job-card__info">
                             <div class="d-flex align-items-center">
-                                <div class="img-c"><img src="../assets/imgs/munish/pexels-helena-lopes-3688761.jpg" /></div>
+                                <div class="img-c"><img src="../assets/imgs/munish/pexels-helena-lopes-3688761.jpg" />
+                                </div>
                                 <div>
                                     <div class="d-flex align-items-center">
                                         <p>Loop Studios</p>
@@ -355,7 +354,7 @@
                         <div class="" style="display: flex;">
                             <button class="apply-button" id="apply_jd5"
                                 onclick="Applied('apply_jd5','unsub_jd5','jd5')">Apply Now</button>
-                            <button class="apply-button" id="unsub_jd5" style="display: none; margin-left: 10px;"
+                            <button class="apply-button-unsub" id="unsub_jd5" style="display: none; margin-left: 10px;"
                                 onclick="Unsubscribe('apply_jd5','unsub_jd5','jd5')">Unsubscribe</button>
                         </div>
                     </li>
@@ -390,7 +389,7 @@
                         <div class="" style="display: flex;">
                             <button class="apply-button" id="apply_jd6"
                                 onclick="Applied('apply_jd6','unsub_jd6','jd6')">Apply Now</button>
-                            <button class="apply-button" id="unsub_jd6" style="display: none; margin-left: 10px;"
+                            <button class="apply-button-unsub" id="unsub_jd6" style="display: none; margin-left: 10px;"
                                 onclick="Unsubscribe('apply_jd6','unsub_jd6','jd6')">Unsubscribe</button>
                         </div>
                     </li>
@@ -426,7 +425,7 @@
                         <div class="" style="display: flex;">
                             <button class="apply-button" id="apply_jd7"
                                 onclick="Applied('apply_jd7','unsub_jd7','jd7')">Apply Now</button>
-                            <button class="apply-button" id="unsub_jd7" style="display: none; margin-left: 10px;"
+                            <button class="apply-button-unsub" id="unsub_jd7" style="display: none; margin-left: 10px;"
                                 onclick="Unsubscribe('apply_jd7','unsub_jd7','jd7')">Unsubscribe</button>
                         </div>
                     </li>
@@ -462,14 +461,15 @@
                         <div class="" style="display: flex;">
                             <button class="apply-button" id="apply_jd8"
                                 onclick="Applied('apply_jd8','unsub_jd8','jd8')">Apply Now</button>
-                            <button class="apply-button" id="unsub_jd8" style="display: none; margin-left: 10px;"
+                            <button class="apply-button-unsub" id="unsub_jd8" style="display: none; margin-left: 10px;"
                                 onclick="Unsubscribe('apply_jd8','unsub_jd8','jd8')">Unsubscribe</button>
                         </div>
                     </li>
                     <li class="job-card new featured" id='jd9'>
                         <div class="job-card__info">
                             <div class="d-flex align-items-center">
-                                <div class="img-c"><img src="../assets/imgs/munish/pexels-helena-lopes-3688761.jpg" /></div>
+                                <div class="img-c"><img src="../assets/imgs/munish/pexels-helena-lopes-3688761.jpg" />
+                                </div>
                                 <div>
                                     <div class="d-flex align-items-center">
                                         <p>Eyecam Co.</p>
@@ -497,7 +497,7 @@
                         <div class="" style="display: flex;">
                             <button class="apply-button" id="apply_jd9"
                                 onclick="Applied('apply_jd9','unsub_jd9','jd9')">Apply Now</button>
-                            <button class="apply-button" id="unsub_jd9" style="display: none; margin-left: 10px;"
+                            <button class="apply-button-unsub" id="unsub_jd9" style="display: none; margin-left: 10px;"
                                 onclick="Unsubscribe('apply_jd9','unsub_jd9','jd9')">Unsubscribe</button>
                         </div>
                     </li>
@@ -533,7 +533,7 @@
                         <div class="" style="display: flex;">
                             <button class="apply-button" id="apply_jd10"
                                 onclick="Applied('apply_jd10','unsub_jd10','jd10')">Apply Now</button>
-                            <button class="apply-button" id="unsub_jd10" style="display: none; margin-left: 10px;"
+                            <button class="apply-button-unsub" id="unsub_jd10" style="display: none; margin-left: 10px;"
                                 onclick="Unsubscribe('apply_jd10','unsub_jd10','jd10')">Unsubscribe</button>
                         </div>
                     </li>
@@ -542,6 +542,21 @@
         </div>
     </main>
 
+    <div id="myModal1" class="modal">
+        <div class="modal-content">
+            <p>You have applied to the job!</p>
+            <!-- Close button -->
+            <button class="closeBtn" id="closeModalBtn2">Close</button>
+        </div>
+    </div>
+
+    <div id="myModal2" class="modal">
+        <div class="modal-content">
+            <p>Unsubscribed!</p>
+            <!-- Close button -->
+            <button class="closeBtn" id="closeModalBtn">Close</button>
+        </div>
+    </div>
 
     <!-- Footer section -->
     <div class="footer">
@@ -549,6 +564,7 @@
             <a href="#"><i class="fa fa-facebook"></i></a>
             <a href="#"><i class="fa fa-twitter"></i></a>
             <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
         </div>
 
         <div class="row">
@@ -561,18 +577,38 @@
         </div>
 
         <div class="row">
-            Humber &copy; 2023 - All rights reserved
+            Campus Link &copy; 2023 - All rights reserved
         </div>
     </div>
     <!-- Footer section ends here-->
     <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
+        var modal1 = document.getElementById("myModal1");
+        var modal2 = document.getElementById("myModal2");
+
+        var span2 = document.getElementById("closeModalBtn2");
+        var span = document.getElementById("closeModalBtn");
+
+        var applyBtn = document.querySelectorAll(".apply-button");
+
+        var unsubBtn = document.querySelectorAll(".apply-button-unsub");
+
+        applyBtn.forEach((btn) => btn.addEventListener("click", () => {
+            modal1.style.display = "flex";
+        }))
+
+        unsubBtn.forEach((btn) => btn.addEventListener("click", () => {
+            modal2.style.display = "flex";
+        }))
+
+        span.onclick = function () {
+            modal2.style.display = "none";
         }
 
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
+        span2.onclick = function () {
+            modal1.style.display = "none";
         }
+
+
     </script>
     <script src="../assets/js/jobBoardPage.js"></script>
 
