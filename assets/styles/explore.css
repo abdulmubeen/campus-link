@@ -1,0 +1,339 @@
+@import url("./default.css");
+
+/* Styling heading 2 */
+h2 {
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+/* Styling container */
+.container {
+  max-width: 1200px;
+  margin: 22px auto;
+  padding: 22px;
+}
+
+/* Styling contact card */
+.content-card {
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  margin: 10px;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+.content-card p {
+  padding-top: 10px;
+  text-align: center;
+  /* font-family: "Lucida Console", "Courier New", monospace; */
+}
+
+/* Styling flexbox content */
+.flexbox-content {
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+}
+
+#imageContainer {
+  position: relative;
+  display: inline-block;
+}
+
+/* Styling details button */
+#detailsButton {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 8px 16px;
+  background-color: black;
+  color: white;
+  /* background-color: #3498db; */
+  /* color: #fff; */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#imageContainer:hover #detailsButton {
+  display: block;
+}
+
+/* #imageContainer {
+    position: relative;
+    display: inline-block;
+}
+
+#detailsButton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+} */
+
+/* Styling eachBox content */
+.eachBox-content {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+  width: 340px;
+}
+
+.eachBox-content:hover {
+  background-color: whitesmoke;
+}
+
+.eachBox-content img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Footer Section */
+.footer {
+  background: #222;
+  padding: 30px 0px;
+  font-family: "Play", sans-serif;
+  text-align: center;
+}
+
+.footer .row {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: #ffffff;
+  font-size: 0.8em;
+}
+
+.footer .row a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+.footer .row a:hover {
+  color: #0f9bffed;
+}
+
+.footer .row ul {
+  width: 100%;
+}
+
+.footer .row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .row a i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
+
+@media screen and (max-width: 750px) {
+  .menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    flex-direction: column;
+  }
+
+  .flexbox-content {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .eachBox-content {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .eachBox-content img {
+    /* width: 300px;
+                height: 300px; */
+    object-fit: cover;
+  }
+
+  .footer {
+    text-align: left;
+    padding: 5%;
+  }
+
+  .footer .row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+  }
+
+  .footer .row a i {
+    margin: 0% 3%;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .eachBox-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+body > .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 25px;
+  background: #0f9bffed; /*header color */
+}
+
+body > .header > ul {
+  list-style: none;
+  display: flex;
+}
+
+body > .header > span {
+  color: #fff;
+}
+
+body > .header > ul > li {
+  margin: 0 12px;
+}
+
+body > .header > ul > li > a {
+  color: #fff;
+}
+
+body > .header > ul > li > a:hover {
+  color: #222;
+}
+
+body > nav {
+  background-color: #222;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+}
+
+body > nav > .toggle-button > a,
+body > nav > ul > li > a {
+  color: #fff;
+}
+
+body > nav > .toggle-button > a:hover,
+body > nav > ul > li > a:hover {
+  color: #0f9bffed;
+}
+
+body > nav > .logo {
+  flex: 1;
+}
+
+body > nav > .logo > a {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+
+body > nav > .logo > h3 {
+  color: #fff;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+body > nav > .menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+body > nav > .menu > li {
+  padding: 15px 10px;
+  font-size: 20px;
+}
+
+body > nav > .toggle-button {
+  font-size: 30px;
+  display: none;
+} /*      Not Working right now because we need javascript for that */
+
+/* Footer Section */
+.footer {
+  background: #222;
+  padding: 30px 0px;
+  font-family: "Play", sans-serif;
+  text-align: center;
+}
+
+.footer .row {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: #ffffff;
+  font-size: 0.8em;
+}
+
+.footer .row a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+.footer .row a:hover {
+  color: #0f9bffed;
+}
+
+.footer .row ul {
+  width: 100%;
+}
+
+.footer .row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .row a i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 60px) {
+  nav {
+    display: block;
+    position: relative;
+    padding: 15px 20px;
+  }
+  .menu {
+    margin-top: 15px;
+    display: none;
+  }
+}
+@media (max-width: 720px) {
+  .footer {
+    text-align: left;
+    padding: 5%;
+  }
+  .footer .row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+  }
+  .footer .row a i {
+    margin: 0% 3%;
+  }
+}

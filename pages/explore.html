@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Explore</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles/explore.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <div class="main-header">
+        <span>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            111 222 3333
+        </span>
+        <ul>
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+    <!-- Header section ends here -->
+
+    <!-- Navbar section -->
+    <nav class="main-nav">
+        <div class="logo">
+            <img src="../assets/imgs/logo.png" alt="logo.png">
+        </div>
+        <div class="toggle-button">
+            <a href="#"><i class="fa fa-bars burger-menu" aria-hidden="true"></i></a>
+        </div>
+        <ul class="main-menu">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./newsfeedPage.html">News Feed</a></li>
+            <li><a href="./explore.html">Explore</a></li>
+            <li><a href="./jobBoard.html">Job Board</a></li>
+            <li><a href="./groupsPage.html">Groups</a></li>
+            <li><a href="./events.html">Events</a></li>
+            <li><a href="./resourceSharing.html">Resource Sharing</a></li>
+        </ul>
+    </nav>
+    <div class="main-side-nav">
+        <a href="#" class="close-button">&times;</a>
+        <a href="./home.html">Home</a>
+        <a href="./newsfeedPage.html">News Feed</a>
+        <a href="./explore.html">Explore</a>
+        <a href="./jobBoard.html">Job Board</a>
+        <a href="./groupsPage.html">Groups</a>
+        <a href="./events.html">Events</a>
+        <a href="./resourceSharing.html">Resource Sharing</a>
+    </div>
+    <!-- Navbar section ends here -->
+
+
+    <!-- Main section-->
+    <main class="container">
+        <div class="content-card">
+            <h2>Trending Topics</h2>
+            <p>Explore groups that match your interests and connect with like-minded people.</p>
+            <div class="flexbox-content">
+                <div id="imageContainer" class="eachBox-content">
+                    <img id="myImage" class="picture" src="../assets/imgs/bhavdeep/TT img3.webp"
+                        alt="Dubbed Grok, it's the first product of Musk's xAI company and is now in testing with a limited group of U.S. users.">
+                    <button id="detailsButton" onclick="showDetails()"><strong>Show Details</strong></button>
+                    <p>Elon Musk Launches New ‘Grok’ AI Chatbot To Compete With ChatGPT</p>
+                </div>
+
+                <div id="imageContainer" class="eachBox-content">
+                    <img id="myImage" class="picture" src="../assets/imgs/bhavdeep/TT img2.webp"
+                        alt="Dubbed Grok, it's the first product of Musk's xAI company and is now in testing with a limited group of U.S. users.">
+                    <button id="detailsButton" onclick="showDetails()"><strong>Show Details</strong></button>
+                    <p>When Was the Last Time That You Updated Your LinkedIn Profile Image?</p>
+                </div>
+
+                <div id="imageContainer" class="eachBox-content">
+                    <img id="myImage" class="picture" src="../assets/imgs/bhavdeep/TT img4.webp"
+                        alt="Dubbed Grok, it's the first product of Musk's xAI company and is now in testing with a limited group of U.S. users.">
+                    <button id="detailsButton" onclick="showDetails()"><strong>Show Details</strong></button>
+                    <p>X Is Reportedly Looking To Charge $50K for Dormant Handles</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2>Recommended Groups</h2>
+            <p>Discover the latest trending topics and join the conversation.</p>
+            <div class="flexbox-content">
+                <div id="imageContainer" class="eachBox-content">
+                    <img id="myImage" class="picture" src="../assets/imgs/bhavdeep/RG img1.png"
+                        alt="Dubbed Grok, it's the first product of Musk's xAI company and is now in testing with a limited group of U.S. users.">
+                    <button id="detailsButton" onclick="showDetails()"><strong>Show Details</strong></button>
+                    <p>Unique platform acts as social media training wheels for students</p>
+                </div>
+
+                <div id="imageContainer" class="eachBox-content">
+                    <img id="myImage" class="picture" src="../assets/imgs/bhavdeep/RG img2.png"
+                        alt="Dubbed Grok, it's the first product of Musk's xAI company and is now in testing with a limited group of U.S. users.">
+                    <button id="detailsButton" onclick="showDetails()"><strong>Show Details</strong></button>
+                    <p>Design, build, and share new things offline and online</p>
+                </div>
+
+                <div id="imageContainer" class="eachBox-content">
+                    <img id="myImage" class="picture" src="../assets/imgs/bhavdeep/RG img3.png"
+                        alt="Dubbed Grok, it's the first product of Musk's xAI company and is now in testing with a limited group of U.S. users.">
+                    <button id="detailsButton" onclick="showDetails()"><strong>Show Details</strong></button>
+                    <p>Encourage student expression and maintain digital portfolios with easy-to-use blog creator</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2>Upcoming Events</h2>
+            <p>Find exciting events near you and RSVP to your favorites.</p>
+            <div class="flexbox-content">
+                <div id="imageContainer" class="eachBox-content">
+                    <img id="myImage" class="picture" src="../assets/imgs/bhavdeep/UE img1.jpg"
+                        alt="Dubbed Grok, it's the first product of Musk's xAI company and is now in testing with a limited group of U.S. users.">
+                    <button id="detailsButton" onclick="showDetails()"><strong>Show Details</strong></button>
+                    <p>Humber Noon-Hour Concerts: Emily Steinwall Quartet</p>
+                </div>
+
+                <div id="imageContainer" class="eachBox-content">
+                    <img id="myImage" class="picture" src="../assets/imgs/bhavdeep/UE img 2.jpg"
+                        alt="Dubbed Grok, it's the first product of Musk's xAI company and is now in testing with a limited group of U.S. users.">
+                    <button id="detailsButton" onclick="showDetails()"><strong>Show Details</strong></button>
+                    <p>Humber Fall Open House</p>
+                </div>
+
+                <div id="imageContainer" class="eachBox-content">
+                    <img id="myImage" class="picture" src="../assets/imgs/bhavdeep/UE img 3.png"
+                        alt="Dubbed Grok, it's the first product of Musk's xAI company and is now in testing with a limited group of U.S. users.">
+                    <button id="detailsButton" onclick="showDetails()"><strong>Show Details</strong></button>
+                    <p>JAZZ NIGHT - Student Showcase Concert Series</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Main section ends here -->
+
+    <!-- Footer section -->
+    <div class="footer">
+        <div class="row">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+
+        <div class="row">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About </a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="row">
+            Humber &copy; 2023 - All rights reserved
+        </div>
+    </div>
+    <!-- Footer section ends here-->
+    <script src="../assets/js/explore.js"></script>
+</body>
+
+</html>

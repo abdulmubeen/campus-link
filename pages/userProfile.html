@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="../assets/styles/userProfile.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <div class="main-header">
+        <span>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            111 222 3333
+        </span>
+        <ul>
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+    <!-- Header section ends here -->
+
+    <!-- Navbar section -->
+    <nav class="main-nav">
+        <div class="logo">
+            <img src="../assets/imgs/logo.png" alt="logo.png">
+        </div>
+        <div class="toggle-button">
+            <a href="#"><i class="fa fa-bars burger-menu" aria-hidden="true"></i></a>
+        </div>
+        <ul class="main-menu">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./newsfeedPage.html">News Feed</a></li>
+            <li><a href="./explore.html">Explore</a></li>
+            <li><a href="./jobBoard.html">Job Board</a></li>
+            <li><a href="./groupsPage.html">Groups</a></li>
+            <li><a href="./events.html">Events</a></li>
+            <li><a href="./resourceSharing.html">Resource Sharing</a></li>
+        </ul>
+    </nav>
+    <div class="main-side-nav">
+        <a href="#" class="close-button">&times;</a>
+        <a href="./home.html">Home</a>
+        <a href="./newsfeedPage.html">News Feed</a>
+        <a href="./explore.html">Explore</a>
+        <a href="./jobBoard.html">Job Board</a>
+        <a href="./groupsPage.html">Groups</a>
+        <a href="./events.html">Events</a>
+        <a href="./resourceSharing.html">Resource Sharing</a>
+    </div>
+    <!-- Navbar section ends here -->
+
+
+    <!-- Main section -->
+    <main>
+        <div class="profile">
+            <img class="cover-image" src="../assets/imgs/bhavdeep/CoverImage.jpg" alt="Cover Image">
+            <img src="../assets/imgs/bhavdeep/BhavdeepSingh-Photo.jpg" alt="Profile Picture" class="profile-picture">
+            <div class="profile-info">
+                <h2 class="profile-name">Bhavdeep Singh</h2>
+                <p class="profile-description">Student at Humber</p>
+            </div>
+            <div class="profile-connections">
+                <p class="connection-count">500 Connections</p>
+            </div>
+        </div>
+
+        <div class="profile-content">
+            <section class="left-content">
+                <div class="content">
+
+                    <div class="About">
+                        <div class="heading-button">
+                            <a><strong>About</strong></a>
+                            <button id="edit-about-btn">Edit</button>
+                        </div> <br><br>
+                        <hr>
+
+                        <p id="about-college">Student at Humber College</p>
+                        <p id="about-work"> Ex- Programmer Analyst at Cognizant</p>
+                    </div>
+
+                    <div class="info">
+                        <div class="heading-button">
+                            <a><strong>Personal Information</strong></a>
+                            <button id="edit-info-btn">Edit</button>
+                        </div><br><br>
+                        <hr>
+
+                        <p><strong>Email:</strong><a
+                                id="Email">singh.bhavdeep2434@gmail.com</a><br><strong>Location:</strong><a
+                                id="Location">Toronto, Ontario</a></p>
+                    </div>
+
+                    <div class="academic-details">
+                        <div class="heading-button">
+                            <a><strong>Academic Details</strong></a>
+                            <button id="edit-ac-details-btn">Edit</button>
+                        </div><br><br>
+                        <hr>
+
+                        <div class="Acad-logo">
+                            <a>Humber College<br>Information Technology Solutions 2023-2025</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- div for post starts here -->
+                <div class="content">
+                    <h3>Posts</h3>
+                    <hr>
+                    <div class="post">
+                        <div class="flex-post">
+                            <img class="Postdp" src="../assets/imgs/bhavdeep/BhavdeepSingh-Photo.jpg"
+                                alt="DisplayPicture">
+                            <a><strong>Bhavdeep Singh</strong></a>
+                        </div>
+                        <p>My first post.</p>
+                        <img class="post-picture" src="../assets/imgs/bhavdeep/PostOne.jpg" alt="post1">
+                    </div>
+                    <div class="post">
+                        <div class="flex-post">
+                            <img class="Postdp" src="../assets/imgs/bhavdeep/BhavdeepSingh-Photo.jpg"
+                                alt="DisplayPicture">
+                            <a><strong>Bhavdeep Singh</strong></a>
+                        </div>
+                        <p>My second post.</p>
+                        <img class="post-picture" src="../assets/imgs/bhavdeep/PostTwo.jpg" alt="post1">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right side section to show connections -->
+            <section class="right-content">
+                <p><strong>Connections</strong></p>
+                <hr>
+                <div class="connections">
+                    <div class="DP">
+                        <img src="../assets/imgs/bhavdeep/AbdulDP.enc" alt="Image1" />
+                        <a>Abdul Mubeen</a>
+                    </div>
+                    <div class="DP">
+                        <img src="../assets/imgs/bhavdeep/TishaDP.png" alt="Image2" />
+                        <a>Tisha Mogha</a>
+                    </div>
+                    <div class="DP">
+                        <img src="../assets/imgs/bhavdeep/MunishDP.png" alt="Image3" />
+                        <a>Munish Patel</a>
+                    </div>
+                    <div class="DP">
+                        <img src="../assets/imgs/bhavdeep/SouravDP.png" alt="Image4" />
+                        <a>Sourav Modak</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- Main section ends here-->
+
+    <!-- Footer section -->
+    <div class="footer">
+        <div class="row">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+
+        <div class="row">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About </a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="row">
+            Humber &copy; 2023 - All rights reserved
+        </div>
+    </div>
+    <!-- Footer section ends here-->
+    <script src="../assets/js/userProfile.js"></script>
+</body>
+
+</html>

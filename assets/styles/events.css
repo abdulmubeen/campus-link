@@ -1,0 +1,576 @@
+@import url("./default.css");
+
+/* Removing text decoration */
+a,
+a:hover {
+  text-decoration: none;
+}
+
+/* Styling header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 25px;
+  background: #0f9bffed;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+}
+
+.header span {
+  color: #fff;
+}
+
+.header li {
+  margin: 0 12px;
+}
+
+.header a {
+  color: #fff;
+}
+
+.header a:hover {
+  color: #222;
+}
+
+/* Styling body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling nav bar */
+nav {
+  background-color: #222;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+}
+
+nav a:hover {
+  color: #0f9bffed;
+}
+
+/* Styling logo */
+.logo {
+  flex: 1;
+}
+
+.logo img {
+  max-width: 200px;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+
+.logo h3 {
+  color: #fff;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+/* Styling menu */
+.menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.menu li {
+  padding: 15px 10px;
+  font-size: 20px;
+}
+
+.toggle-button {
+  font-size: 30px;
+  display: none;
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+.body-content {
+  display: flex;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.text-overlay h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.text-overlay p {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+/* Styling the left content */
+.left-content {
+  float: left;
+  min-width: 20%;
+  height: auto;
+  /* height: 100vh; */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: white;
+  margin: 1%;
+}
+
+.left-menu {
+  list-style: none;
+}
+
+.left-menu li a {
+  border-radius: 4px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  text-decoration: none;
+  padding: 15px;
+}
+
+.left-menu li:hover {
+  background-color: #d8cfcf;
+}
+
+.Box {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: whitesmoke;
+  text-align: center;
+}
+
+/* Styling the right content section */
+.right-content {
+  float: right;
+  max-width: 73%;
+  margin-right: 50px;
+  /* max-width: 800px; */
+  margin: 1%;
+  /* margin: 20px auto; */
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.right-content h2 {
+  color: red;
+}
+
+/* Styling the Display picture */
+.DP {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.DP img {
+  aspect-ratio: 1/1;
+  border-radius: 5px;
+}
+
+.DP a {
+  font-weight: bold;
+}
+
+/* Styling the event section */
+.event {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.event .DP {
+  width: 50%;
+}
+
+.event img {
+  width: calc(100% - (20px * 2));
+  margin: 20px;
+}
+
+/* Styling the flexbox content */
+.flexbox-content {
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+}
+
+/* Styling eachbox content  */
+.eachBox-content {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+  width: 340px;
+}
+
+.eachBox-content:hover {
+  background-color: whitesmoke;
+}
+
+.eachBox-content img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* 
+.right-content {
+    float: right;
+} */
+
+/* Styling the row content */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+/* Styling the description */
+.flex-description {
+  margin: 5px;
+  padding: 10px;
+  text-align: justify;
+}
+
+.flex-description h2 {
+  text-align: left;
+  padding-bottom: 10px;
+  color: red;
+}
+
+.flex-description h2:hover {
+  text-decoration: underline;
+}
+
+.flex-picture {
+  margin: 5px;
+  padding: 10px;
+}
+
+.flex-picture img {
+  border-radius: 10px;
+}
+
+.attend-event {
+  text-align: center;
+  /* align-items: end; */
+  margin: 20px;
+}
+
+/* styling the attend event button */
+.attend-event button {
+  /* background-color: #ff4500; */
+  background-color: red;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.attend-event button:hover {
+  background-color: #a23623;
+}
+
+/* Footer Section */
+.footer {
+  background: #222;
+  padding: 30px 0px;
+  font-family: "Play", sans-serif;
+  text-align: center;
+}
+
+.footer .row {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: #ffffff;
+  font-size: 0.8em;
+}
+
+.footer .row a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+.footer .row a:hover {
+  color: #0f9bffed;
+}
+
+.footer .row ul {
+  width: 100%;
+}
+
+.footer .row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .row a i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
+
+/* Footer Section */
+.footer {
+  background: #222;
+  padding: 30px 0px;
+  font-family: "Play", sans-serif;
+  text-align: center;
+}
+
+.footer .row {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: #ffffff;
+  font-size: 0.8em;
+}
+
+.footer .row a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+.footer .row a:hover {
+  color: #0f9bffed;
+}
+
+.footer .row ul {
+  width: 100%;
+}
+
+.footer .row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .row a i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-content {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+  }
+
+  .left-menu {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .right-content {
+    align-self: center;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flex-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex-picture {
+    align-self: center;
+  }
+  .body-content {
+    flex-direction: column;
+  }
+
+  .text-overlay {
+    top: 30%;
+  }
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+body > .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 25px;
+  background: #0f9bffed; /*header color */
+}
+
+body > .header > ul {
+  list-style: none;
+  display: flex;
+}
+
+body > .header > span {
+  color: #fff;
+}
+
+body > .header > ul > li {
+  margin: 0 12px;
+}
+
+body > .header > ul > li > a {
+  color: #fff;
+}
+
+body > .header > ul > li > a:hover {
+  color: #222;
+}
+
+body > nav {
+  background-color: #222;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+}
+
+body > nav > .toggle-button > a,
+body > nav > ul > li > a {
+  color: #fff;
+}
+
+body > nav > .toggle-button > a:hover,
+body > nav > ul > li > a:hover {
+  color: #0f9bffed;
+}
+
+body > nav > .logo {
+  flex: 1;
+}
+
+body > nav > .logo > a {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+
+body > nav > .logo > h3 {
+  color: #fff;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+body > nav > .menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+body > nav > .menu > li {
+  padding: 15px 10px;
+  font-size: 20px;
+}
+
+body > nav > .toggle-button {
+  font-size: 30px;
+  display: none;
+} /*      Not Working right now because we need javascript for that */
+
+/* Footer Section */
+.footer {
+  background: #222;
+  padding: 30px 0px;
+  font-family: "Play", sans-serif;
+  text-align: center;
+}
+
+.footer .row {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: #ffffff;
+  font-size: 0.8em;
+}
+
+.footer .row a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+.footer .row a:hover {
+  color: #0f9bffed;
+}
+
+.footer .row ul {
+  width: 100%;
+}
+
+.footer .row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .row a i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 60px) {
+  nav {
+    display: block;
+    position: relative;
+    padding: 15px 20px;
+  }
+  .menu {
+    margin-top: 15px;
+    display: none;
+  }
+}
+@media (max-width: 720px) {
+  .footer {
+    text-align: left;
+    padding: 5%;
+  }
+  .footer .row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+  }
+  .footer .row a i {
+    margin: 0% 3%;
+  }
+}
