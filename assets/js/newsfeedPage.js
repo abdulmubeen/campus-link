@@ -19,3 +19,11 @@ window.addEventListener("load", (event) => {
     }
   });
 });
+
+const likeBtn = document.querySelectorAll(".likeBtn");
+
+likeBtn.forEach((btn) =>
+  btn.addEventListener("click", () => {
+    btn.style.backgroundColor = "red";
+  })
+);
