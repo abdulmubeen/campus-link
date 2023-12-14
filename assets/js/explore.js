@@ -1,9 +1,3 @@
-function showDetails() {
-  const myImage = document.getElementById("myImage");
-  const imageDetails = `${myImage.alt}`;
-  alert(imageDetails);
-}
-
 window.addEventListener("load", (event) => {
   const openButton = document.querySelector(".toggle-button a");
   const closeButton = document.querySelector(".close-button");

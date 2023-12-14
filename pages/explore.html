@@ -145,6 +145,16 @@
     </main>
     <!-- Main section ends here -->
 
+    <div id="myModal1" class="modal">
+        <div class="modal-content">
+            <p>Dubbed Grok, it's the first product of Musk's xAI company and is now in testing with a limited group of
+                U.S. users.</p>
+            <!-- Close button -->
+            <button class="closeBtn" id="closeModalBtn2">Close</button>
+        </div>
+    </div>
+
+
     <!-- Footer section -->
     <div class="footer">
         <div class="row">
@@ -168,6 +178,20 @@
         </div>
     </div>
     <!-- Footer section ends here-->
+    <script>
+        var modal1 = document.getElementById("myModal1");
+        var span2 = document.getElementById("closeModalBtn2");
+
+        var showBtns = document.querySelectorAll("#detailsButton");
+
+        showBtns.forEach((btn) => btn.addEventListener("click", () => {
+            modal1.style.display = "flex";
+        }))
+
+        span2.onclick = function () {
+            modal1.style.display = "none";
+        }
+    </script>
     <script src="../assets/js/explore.js"></script>
 </body>
 
