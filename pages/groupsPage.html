@@ -68,7 +68,7 @@
                 <label for="joinGroupCode">Group Code:</label>
                 <input type="text" id="joinGroupCode" name="joinGroupCode" required>
 
-                <button type="submit" onclick="joinGroup()">Join Group</button>
+                <button type="submit" id="joinBtn" onclick="joinGroup()">Join Group</button>
             </form>
 
             <hr>
@@ -83,6 +83,14 @@
 
                 <button type="submit" onclick="createGroup()">Create Group</button>
             </form>
+        </div>
+    </div>
+
+    <div id="myModal1" class="modal">
+        <div class="modal-content">
+            <p>Welcome to the Group!</p>
+            <!-- Close button -->
+            <button class="closeBtn" id="closeModalBtn2">Close</button>
         </div>
     </div>
     <!-- Footer section -->
@@ -108,6 +116,21 @@
         </div>
     </div>
     <!-- Footer section ends here-->
+    <script>
+        var modal1 = document.getElementById("myModal1");
+        var span2 = document.getElementById("closeModalBtn2");
+
+        var joinBtn = document.querySelector("#joinBtn");
+
+        joinBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            modal1.style.display = "flex";
+        })
+
+        span2.onclick = function () {
+            modal1.style.display = "none";
+        }
+    </script>
     <script src="../assets/js/groupsPage.js"></script>
 </body>
 
